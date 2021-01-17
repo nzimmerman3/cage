@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Header from "./components/Header"
+import MainContent from "./components/MainContent"
+import Footer from "./components/Footer"
+
 function App() {
-  return (
+  /* return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -18,6 +22,21 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  ); */
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+      {/* <input type="checkbox" />
+      <p>Item 1</p>
+      <input type="checkbox" />
+      <p>Item 2</p>
+      <input type="checkbox" />
+      <p>Item 3</p>
+      <input type="checkbox" />
+      <p>Item 4</p> */}
     </div>
   );
 }

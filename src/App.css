@@ -36,3 +36,300 @@
     transform: rotate(360deg);
   }
 }
+
+/* my shit starts here */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* keira: ===== HEADER / NAV-BAR ====== */
+
+.navbar {
+  position: relative;
+  background-color: #000000;
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 28px 10px;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.navbar a:hover {
+  text-decoration: none;
+}
+.navbar-center a {
+  padding-bottom: 22px;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar-left {
+  margin-left: 26px;
+}
+.navbar-left a {
+  float: left;
+}
+.navbar-right {
+  margin-right: 26px;
+}
+.navbar-right a {
+  float: right;
+}
+
+/* XXXXX: replace "text-decoration: none" w/ .line */
+.line {
+  /* Increase this as per requirement */
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+}
+
+/* keira: =========== MAIN ============ */
+
+.main-content {
+  height: 1000px;
+  background-color: rgb(247, 247, 247);
+  color: rgb(22, 22, 22);
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/table.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* keira: =========== FOOTER ============ */
+
+.footer {
+  background: #111111;
+  height: auto;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-signature {
+  padding-bottom: 10px;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  background: #000000;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px;
+}
+
+.footer-bottom p {
+  font-family: "Courier Prime", monospace;
+  font-size: 11px;
+  word-spacing: 3px;
+  text-transform: capitalize;
+  display: table;
+  float: right;
+  justify-content: right;
+  align-content: right;
+  /* background-color: #e30404; */
+  padding-top: 3px;
+  padding-right: 30px;
+}
+
+.socials {
+  float: left;
+  height: 100%;
+}
+
+.socials a {
+  float: right;
+  height: 100%;
+  display: table;
+  padding: 0px 25px;
+  /* background-color: blue; */
+}
+
+/* psuedo-selector: targets only the last element on the left in <a>*/
+.socials a:last-child {
+  padding-left: 30px;
+}
+
+.socials a li {
+  color: whitesmoke;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Montserrat";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.socials a:hover i {
+  /* color: #0088e4; */
+  color: #f5b413;
+  /* color: #ed0000; */
+}
+
+/* keira: =========== TRASH CODE ============ */
+
+.header {
+  width: 100%;
+  height: 84px;
+  display: block;
+  background-color: #000000;
+}
+
+.inner-header {
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: green;
+}
+
+.logo-container {
+  height: 100%;
+  display: table;
+  /* float: left; */
+  margin: 0 auto;
+  background-color: red;
+}
+
+.logo-container h1 {
+  color: whitesmoke;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Montserrat";
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  float: left;
+  height: 100%;
+  display: table;
+  padding: 0px 10px;
+  background-color: blue;
+}
+
+/* psuedo-selector: targets only the last element inside of <a> */
+.navigation a:last-child {
+  padding-right: 0px;
+}
+
+.navigation a li {
+  color: whitesmoke;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.navigation a li:hover {
+  text-decoration: none;
+}
+
+.navigation-left {
+  float: left;
+  height: 100%;
+}
+
+.navigation-left a {
+  float: right;
+  height: 100%;
+  display: table;
+  padding: 0px 10px;
+  /* background-color: ; */
+}
+
+/* psuedo-selector: targets only the last element inside of <a> */
+.navigation-left a:last-child {
+  padding-left: 0px;
+}
+
+.navigation-left a li {
+  color: whitesmoke;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.navigation-left a li:hover {
+  text-decoration: none;
+}
+
+/* .socials {
+  list-style: none;
+  width: 20%;
+  margin: 1rem 0 3rem 0;
+  margin-left: 20px;
+  display: table;
+  float: left;
+  background-color: aqua;
+}
+
+.socials li {
+  margin: 0 22px;
+  background-color: red;
+}
+.socials a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.socials a i {
+  font-size: 1.2rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: #e30404;
+}
+ */
