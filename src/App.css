@@ -51,7 +51,7 @@
 
 .navbar {
   position: relative;
-  background-color: #000000;
+  background-color: transparent;
   overflow: hidden;
 }
 .navbar a {
@@ -88,7 +88,7 @@
   float: right;
 }
 
-/* XXXXX: replace "text-decoration: none" w/ .line */
+/* TODO: replace "text-decoration: none" w/ .line */
 .line {
   /* Increase this as per requirement */
   padding-bottom: 15px;
@@ -100,18 +100,16 @@
 /* keira: =========== MAIN ============ */
 
 .main-content {
+  margin-top: 800px;
+  margin-left: 32px;
+  margin-right: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
   height: 1000px;
-  background-color: rgb(247, 247, 247);
-  color: rgb(22, 22, 22);
   text-align: center;
   font-size: 12px;
   display: block;
   justify-content: center;
   align-items: center;
-  background-image: url("images/table.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 /* keira: =========== FOOTER ============ */
@@ -193,7 +191,7 @@
 }
 
 .socials a li {
-  color: whitesmoke;
+  color: white;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -204,132 +202,7 @@
 
 .socials a:hover i {
   /* color: #0088e4; */
-  color: #f5b413;
+  /*   color: #f5b413; */
   /* color: #ed0000; */
+  color: #dadada;
 }
-
-/* keira: =========== TRASH ============ */
-
-.header {
-  width: 100%;
-  height: 84px;
-  display: block;
-  background-color: #000000;
-}
-
-.inner-header {
-  width: 90%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  background-color: green;
-}
-
-.logo-container {
-  height: 100%;
-  display: table;
-  /* float: left; */
-  margin: 0 auto;
-  background-color: red;
-}
-
-.logo-container h1 {
-  color: whitesmoke;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: "Montserrat";
-  font-size: 26px;
-  text-transform: uppercase;
-}
-
-.navigation {
-  float: right;
-  height: 100%;
-}
-
-.navigation a {
-  float: left;
-  height: 100%;
-  display: table;
-  padding: 0px 10px;
-  background-color: blue;
-}
-
-/* psuedo-selector: targets only the last element inside of <a> */
-.navigation a:last-child {
-  padding-right: 0px;
-}
-
-.navigation a li {
-  color: whitesmoke;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: "Courier Prime", monospace;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-.navigation a li:hover {
-  text-decoration: none;
-}
-
-.navigation-left {
-  float: left;
-  height: 100%;
-}
-
-.navigation-left a {
-  float: right;
-  height: 100%;
-  display: table;
-  padding: 0px 10px;
-  /* background-color: ; */
-}
-
-/* psuedo-selector: targets only the last element inside of <a> */
-.navigation-left a:last-child {
-  padding-left: 0px;
-}
-
-.navigation-left a li {
-  color: whitesmoke;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: "Courier Prime", monospace;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-.navigation-left a li:hover {
-  text-decoration: none;
-}
-
-/* .socials {
-  list-style: none;
-  width: 20%;
-  margin: 1rem 0 3rem 0;
-  margin-left: 20px;
-  display: table;
-  float: left;
-  background-color: aqua;
-}
-
-.socials li {
-  margin: 0 22px;
-  background-color: red;
-}
-.socials a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.socials a i {
-  font-size: 1.2rem;
-  transition: color 0.4s ease;
-}
-.socials a:hover i {
-  color: #e30404;
-}
- */
