@@ -99,88 +99,123 @@
 
 /* keira: =========== MAIN ============ */
 
-.main {
-  margin-top: 800px;
+.tour {
+  height: 1800px;
   background-image: url("images/stripe-tear.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1211px;
-  display: block;
-}
+  box-sizing: border-box;
 
-/* TODO: make main-container begin lower than main; center in respect to "main" */
-.main-container {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 88%;
+  margin-top: 800px;
+  padding-top: 240px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.tour-content {
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.97);
+  box-sizing: border-box;
+
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tour-header {
+  width: 20vh;
+  height: 6vh;
   margin-left: auto;
   margin-right: auto;
+  background-color: black;
+  display: table;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-.main-content {
+.tour-header p {
   font-family: "Courier Prime", monospace;
   color: white;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  /* background-color: red; */
-}
-
-.main-header-container {
-  /* background-image: url("images/black-paper.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: black;
-  margin: auto;
-  width: 140px;
-  height: 50px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 50px; /* must equal "height" */
-}
-
-.main-header {
+  font-size: 22px;
   text-transform: uppercase;
-  font-size: 24px;
+  vertical-align: middle;
+  height: 100%;
+  display: table-cell;
+}
+
+.event {
+  background: #000000;
+
+  text-align: center;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+  height: 80px;
+  line-height: 80px;
+  /* Increase this as per requirement */
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  color: white;
+}
+
+.event-left {
+  float: left;
+  height: 100%;
+}
+
+.event-left a {
+  float: right;
+  height: 100%;
+  display: table;
+  padding: 0px 100px;
   /* background-color: blue; */
 }
 
-.event-container {
-  padding-bottom: 0px;
-  border-bottom-style: solid;
-  border-bottom-width: 0.5px;
+/* psuedo-selector: targets only the last element on the left in <a>*/
+.event-left a:last-child {
+  padding-left: 0px;
+}
 
-  margin: auto;
-  width: 95%;
-  position: relative;
-  background-color: black;
-  overflow: hidden;
-}
-/* TODO: Reformat "event-container a" so first half is left-aligned & second half is right-aligned. */
-.event-container a {
-  background-color: transparent;
-  float: left;
-  color: #f2f2f2;
-  text-align: left;
-  /* padding: 28px 30px; */
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-right: 52px;
+.event-left a li {
   font-family: "Courier Prime", monospace;
-  font-size: 17px;
-  text-transform: uppercase;
-  line-height: 55px;
+  font-size: 16px;
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
-.event-ticket-button {
-  background-color: white;
-  display: block;
-  width: 130px;
-  line-height: 55px;
+
+.event-right {
+  float: right;
+  height: 80%;
 }
-.event-ticket-button p {
+.event-right a {
+  float: right;
+  float: right;
+  display: table;
+
+  margin-top: 20px;
+}
+.event-right a:last-child {
+  margin-right: 20px;
+}
+.event-right a li {
+  font-family: "Courier Prime", monospace;
+  font-size: 16px;
   color: black;
-  text-align: center;
   text-transform: uppercase;
+  background-color: white;
+  display: table-cell;
+  vertical-align: middle;
+
+  height: 80%;
+  line-height: 40px;
+  width: 150px;
+}
+.event-right a:hover li {
+  color: white;
+  background-color: red;
 }
 
 /* keira: =========== FOOTER ============ */
@@ -278,8 +313,5 @@
 }
 
 .socials a:hover i {
-  /* color: #0088e4; */
-  /*   color: #f5b413; */
-  /* color: #ed0000; */
   color: #dadada;
 }
