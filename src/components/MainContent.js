@@ -1,8 +1,10 @@
 import React from "react"
+import TornEdge from '../images/torn-edge.png'
 
 function MainContent() {
     return (
       <main className="main" id="tour">
+        {/* <div><a href="#"><img src={TornEdge} alt="" /></a></div> */}
         <div className="main-container">
           <div className="main-content">
 

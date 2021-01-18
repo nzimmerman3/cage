@@ -103,11 +103,11 @@
   margin-top: 800px;
   /*   margin-left: 32px;
   margin-right: 32px; */
-  background-image: url("images/cageback.jpg");
+  background-image: url("images/stripe-tear.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: rgba(0, 0, 0, 0.75); */
-  height: 900px;
+  height: 1211px;
   display: block;
 }
 
@@ -116,7 +116,7 @@
 } */
 
 .main-content {
-  padding-top: 30px;
+  padding-top: 220px;
   font-family: "Courier Prime", monospace;
   color: white;
   display: block;
@@ -125,19 +125,22 @@
 }
 
 .main-header-container {
+  /* background-image: url("images/black-paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
   background-color: black;
   margin: auto;
-  width: 120px;
-  height: 60px;
+  width: 140px;
+  height: 50px;
   text-align: center;
   vertical-align: middle;
-  line-height: 60px; /* must equal "height" */
+  line-height: 50px; /* must equal "height" */
 }
 
 /* TODO: center "main-header a" */
 .main-header {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 32px;
   /* background-color: blue; */
 }
 
