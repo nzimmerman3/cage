@@ -8,7 +8,7 @@ function Header() {
             <ul className="navbar-left">
               <a href="#"><li>News</li></a>
               <a href="#"><li>Music</li></a>
-              <a href="#"><li>Tour</li></a>
+              <a href="#tour"><li>Tour</li></a>
             </ul>
             <div className="navbar-center" id="logo">
               <a href="#"><img src={Logo} width="245" alt="" /></a>
