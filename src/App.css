@@ -111,8 +111,9 @@
 
 /* TODO: make main-container begin lower than main; center in respect to "main" */
 .main-container {
-  margin-left: 150px;
-  margin-right: 150px;
+  /* margin-top: 1000px; */
+  margin-left: 70px;
+  margin-right: 70px;
   /* padding-top: 220px; */
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -147,34 +148,41 @@
 }
 
 .event-container {
-  margin: auto;
-  width: 95%;
-  padding: 10px;
-  margin-top: 30px;
-  font-size: 16px;
-  background-color: black;
-  /* Increase this as per requirement */
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
-}
-.line {
-  /* Increase this as per requirement */
-  padding-bottom: 15px;
-  border-bottom-style: solid;
-  border-bottom-width: 3.1px;
-  width: fit-content;
-}
 
+  margin: auto;
+  width: 88.65%;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+/* TODO: Reformat "event-container a" so first half is left-aligned & second half is right-aligned. */
+.event-container a {
+  background-color: transparent;
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  /* padding: 28px 30px; */
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-right: 52px;
+  font-family: "Courier Prime", monospace;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 55px;
+}
 .event-ticket-button {
   background-color: white;
   display: block;
   width: 130px;
+  line-height: 55px;
 }
-
 .event-ticket-button p {
   color: black;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* keira: =========== FOOTER ============ */

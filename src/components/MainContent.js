@@ -10,49 +10,53 @@ function MainContent() {
           </div>
 
           <ul className="event-container">
-            <li className="event-date">14th February 2021</li>
-            <li className="event-venue">
-              Wardrobe Presented by Crash Records [Matinee]
-            </li>
-            <li className="event-location">Leeds, United Kingdom</li>
-            <a className="event-ticket-button">
-              <p>Get Tickets</p>
+            <a>
+              <li>14th February 2021</li>
+            </a>
+            <a>
+              <li>Wardrobe Presented by Crash Records [Matinee]</li>
+            </a>
+            <a>
+              <li>Leeds, United Kingdom</li>
+            </a>
+            <a>
+              <div className="event-ticket-button">
+                <p>Get Tickets</p>
+              </div>
             </a>
           </ul>
+
           <ul className="event-container">
-            <li className="event-date">15th February 2021</li>
-            <li className="event-venue">Pryzm Presented by Banquet Records</li>
-            <li className="event-location">Kingston, United Kingdom</li>
-            <a className="event-ticket-button">
-              <p>Get Tickets</p>
+            <a>
+              <li>15th February 2021</li>
+            </a>
+            <a>
+              <li>Pryzm Presented by Banquet Records</li>
+            </a>
+            <a>
+              <li>Kingston, United Kingdom</li>
+            </a>
+            <a>
+              <div className="event-ticket-button">
+                <p>Get Tickets</p>
+              </div>
             </a>
           </ul>
+
           <ul className="event-container">
-            <li className="event-date">14th February 2021</li>
-            <li className="event-venue">
-              Wardrobe Presented by Crash Records [Matinee]
-            </li>
-            <li className="event-location">Leeds, United Kingdom</li>
-            <a className="event-ticket-button">
-              <p>Get Tickets</p>
+            <a>
+              <li>16th February 2021</li>
             </a>
-          </ul>
-          <ul className="event-container">
-            <li className="event-date">15th February 2021</li>
-            <li className="event-venue">Pryzm Presented by Banquet Records</li>
-            <li className="event-location">Kingston, United Kingdom</li>
-            <a className="event-ticket-button">
-              <p>Get Tickets</p>
+            <a>
+              <li>Chalk Presented By Resident</li>
             </a>
-          </ul>
-          <ul className="event-container">
-            <li className="event-date">14th February 2021</li>
-            <li className="event-venue">
-              Wardrobe Presented by Crash Records [Matinee]
-            </li>
-            <li className="event-location">Leeds, United Kingdom</li>
-            <a className="event-ticket-button">
-              <p>Get Tickets</p>
+            <a>
+              <li>Brighton, United Kingdom</li>
+            </a>
+            <a>
+              <div className="event-ticket-button">
+                <p>Get Tickets</p>
+              </div>
             </a>
           </ul>
         </div>
