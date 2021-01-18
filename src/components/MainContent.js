@@ -1,5 +1,4 @@
 import React from "react"
-import TornEdge from '../images/torn-edge.png'
 
 function MainContent() {
     return (
