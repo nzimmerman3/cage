@@ -82,20 +82,6 @@ function MainContent() {
                   <p>Get Tickets</p>
                 </a>
             </ul>
-            <ul className="event-container">
-                <li className="event-date">
-                  15th February 2021
-                </li>
-                <li className="event-venue">
-                  Pryzm Presented by Banquet Records
-                </li>
-                <li className="event-location">
-                  Kingston, United Kingdom
-                </li>
-                <a className="event-ticket-button">
-                  <p>Get Tickets</p>
-                </a>
-            </ul>
 
           </div>
         </div>
