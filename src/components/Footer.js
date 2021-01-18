@@ -3,7 +3,7 @@ import Signature from "../images/signature-white.png";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-signature">
           <img src={Signature} width="200" alt="logo" />
@@ -12,7 +12,7 @@ function Footer() {
           <p>© 2021 Sony Music Entertainment. All Rights Reserved.</p>
           <p>
             RCA and Design is a registered trademark of RCA Trademark Management
-            SA.
+            SA. Used under license.
           </p>
           {/* <p><a href="mailto:email@example.com">email@example.com</a></p> */}
         </div>
