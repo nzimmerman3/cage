@@ -3,9 +3,9 @@ import TornEdge from '../images/torn-edge.png'
 
 function MainContent() {
     return (
-      <main className="main" id="tour">
-        {/* <div><a href="#"><img src={TornEdge} alt="" /></a></div> */}
-        <div className="main-container">
+      <main className="main">
+
+        <div className="main-container" id="tour">
           <div className="main-content">
 
             <div className="main-header-container">

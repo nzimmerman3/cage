@@ -101,8 +101,6 @@
 
 .main {
   margin-top: 800px;
-  /*   margin-left: 32px;
-  margin-right: 32px; */
   background-image: url("images/stripe-tear.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,17 +109,22 @@
   display: block;
 }
 
-/* .main-container {
+/* TODO: make main-container begin lower than main; center in respect to "main" */
+.main-container {
+  margin-left: 150px;
+  margin-right: 150px;
+  /* padding-top: 220px; */
   background-color: rgba(0, 0, 0, 0.9);
-} */
+}
 
 .main-content {
-  padding-top: 220px;
+  margin-top: 220px;
   font-family: "Courier Prime", monospace;
   color: white;
   display: block;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
 }
 
 .main-header-container {
@@ -137,30 +140,41 @@
   line-height: 50px; /* must equal "height" */
 }
 
-/* TODO: center "main-header a" */
 .main-header {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 24px;
   /* background-color: blue; */
 }
 
 .event-container {
   margin: auto;
-  width: 85%;
+  width: 95%;
   padding: 10px;
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 16px;
   background-color: black;
+  /* Increase this as per requirement */
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+}
+.line {
+  /* Increase this as per requirement */
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
 }
 
 .event-ticket-button {
   background-color: white;
   display: block;
-  width: 15%;
+  width: 130px;
 }
 
 .event-ticket-button p {
   color: black;
+  text-align: center;
 }
 
 /* keira: =========== FOOTER ============ */
