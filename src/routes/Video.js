@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Video() {
+export const Video = () => {
   return (
     <div>
       video

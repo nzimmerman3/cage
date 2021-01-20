@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Tour() {
+export const Tour = () => {
   return (
     <div>
-      Tour
+      tour
     </div>
   )
 }
