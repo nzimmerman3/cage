@@ -285,9 +285,9 @@
 .input-box {
   margin: 50px auto;
   width: 80%;
-  border-bottom: 0.1px solid #ccc;
+  border-bottom: 0.1px solid rgb(107, 107, 107);
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   text-align: left;
 }
 /* TODO: Customize/fix drop-down / select style. */
@@ -307,7 +307,7 @@
   height: 23px;
 }
 ::placeholder {
-  color: rgb(182, 182, 182);
+  color: rgb(161, 161, 161);
 }
 .fa {
   margin-right: 10px;
