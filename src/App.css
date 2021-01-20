@@ -247,7 +247,7 @@
   /* background: #111111; */
   height: auto;
   font-family: "Open Sans";
-  padding-top: 40px;
+  padding-top: 25px;
   color: #ffffff;
 }
 
@@ -268,19 +268,20 @@
 }
 
 .footer-signature {
-  padding-bottom: 35px;
+  padding-bottom: 65px;
 }
 
 /* 1/19 */
 .form-box h1 {
   font-family: "Courier Prime", monospace;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .form-box p {
   font-family: "Courier Prime", monospace;
 }
 .input-box {
-  margin: 30px auto;
+  margin: 50px auto;
   width: 80%;
   border-bottom: 0.1px solid #ccc;
   padding-top: 10px;
@@ -306,7 +307,7 @@
   margin-right: 10px;
 }
 .subscribe-btn {
-  margin: 45px auto 50px;
+  margin: 45px auto 140px;
   width: 30%;
   display: block;
   outline: none;
@@ -324,7 +325,7 @@
   border: 0.1px solid red;
   cursor: pointer;
   background: red;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 

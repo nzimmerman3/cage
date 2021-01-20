@@ -3,17 +3,17 @@ import Signature from "../images/signature-white.png";
 
 function Footer() {
   return (
-    <footer className="footer" id="footer">
+    <footer className="footer" id="news">
       <div className="footer-content">
         <div className="footer-signature">
           <img src={Signature} width="200" alt="logo" />
         </div>
         <div className="form-box">
           <form action="">
-            <h1>Join Our Newsletter</h1>
+            <h1>Sign Up for Our Newsletter</h1>
             <p>
-              Adipisicing ipsum quis enim excepteur ea incididunt non deserunt
-              aliqua. Qui nostrud reprehenderit nisi voluptate excepteur!
+              Sign up for our newsletter! Get all the latest updates and
+              information on upcoming events first!
             </p>
             <div className="input-box">
               {/* <i class="fa fa-envelope-o"></i> */}
