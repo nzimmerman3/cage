@@ -4,10 +4,10 @@ function MainContent() {
   return (
     <main>
       <section className="tour">
+        <div className="tour-header">
+          <p>Tour</p>
+        </div>
         <div className="tour-content">
-          <div className="tour-header">
-            <p>Tour</p>
-          </div>
           <div className="event">
             <div className="event-container">
               <ul className="event-left">
