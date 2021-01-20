@@ -4,39 +4,29 @@ import './App.css';
 import Header from "./components/Header"
 import MainContent from "./components/MainContent"
 import Footer from "./components/Footer"
+import News from "./routes/News"
+import Music from "./routes/Music"
+import Tour from "./routes/Tour"
+import Photos from "./routes/Photos"
+import Video from "./routes/Video"
+import Shop from "./routes/Shop"
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 function App() {
-  /* return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  ); */
   return (
     <div>
       <Header />
-      <MainContent />
+      <Switch>
+        <Route exact path={"/"} component={MainContent} />
+        <Route exact path={"/news"} component={News} />
+        <Route exact path={"/music"} component={Music} />
+        <Route exact path={"/tour"} component={Tour} />
+        <Route exact path={"/photos"} component={Photos} />
+        <Route exact path={"/video"} component={Video} />
+        <Route exact path={"/shop"} component={Shop} />
+      </Switch>
       <Footer />
-      {/* <input type="checkbox" />
-      <p>Item 1</p>
-      <input type="checkbox" />
-      <p>Item 2</p>
-      <input type="checkbox" />
-      <p>Item 3</p>
-      <input type="checkbox" />
-      <p>Item 4</p> */}
     </div>
   );
 }
