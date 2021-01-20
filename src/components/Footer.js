@@ -8,12 +8,28 @@ function Footer() {
         <div className="footer-signature">
           <img src={Signature} width="200" alt="logo" />
         </div>
+        <div className="form-box">
+          <form action="">
+            <h1>Join Our Newsletter</h1>
+            <p>
+              Adipisicing ipsum quis enim excepteur ea incididunt non deserunt
+              aliqua. Qui nostrud reprehenderit nisi voluptate excepteur!
+            </p>
+            <div className="input-box">
+              {/* <i class="fa fa-envelope-o"></i> */}
+              <input type="email" placeholder="Email Address"></input>
+            </div>
+            <button type="button" class="subscribe-btn">
+              Subscribe
+            </button>
+          </form>
+        </div>
         <div>
-          <p>© 2021 Sony Music Entertainment. All Rights Reserved.</p>
+          {/*           <p>© 2021 Sony Music Entertainment. All Rights Reserved.</p>
           <p>
             RCA and Design is a registered trademark of RCA Trademark Management
             SA. Used under license.
-          </p>
+          </p> */}
           {/* <p><a href="mailto:email@example.com">email@example.com</a></p> */}
         </div>
       </div>
