@@ -17,7 +17,12 @@ function Footer() {
             </p>
             <div className="input-box">
               {/* <i class="fa fa-envelope-o"></i> */}
-              <input type="email" placeholder="Email Address"></input>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              ></input>
             </div>
             <button type="button" class="subscribe-btn">
               Subscribe

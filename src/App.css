@@ -99,6 +99,8 @@
 
 /* keira: =========== MAIN ============ */
 
+/* TODO: make section collapsible / add a "more dates" button */
+/* TODO: add eyes/lips icons/animations */
 .tour {
   height: 1800px;
   background-image: url("images/stripe-tear.png");
@@ -287,6 +289,10 @@
   padding-top: 10px;
   padding-bottom: 5px;
   text-align: left;
+}
+/* TODO: Customize/fix drop-down / select style. */
+#email {
+  color: white;
 }
 .input-box input {
   width: 90%;
