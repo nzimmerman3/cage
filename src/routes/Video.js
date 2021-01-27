@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Video = () => {
+export default function Video() {
   return (
     <div>
-      video
+
     </div>
   )
 }

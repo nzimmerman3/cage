@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const Tour = () => {
+export default function Tour() {
   return (
     <div>
-      tour
+
     </div>
   )
 }
+

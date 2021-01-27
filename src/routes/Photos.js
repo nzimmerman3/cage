@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Photos = () => {
+export default function Photos() {
   return (
     <div>
-      photos
+
     </div>
   )
 }
