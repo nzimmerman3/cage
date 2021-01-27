@@ -1,10 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Music() {
-  return (
-    <div>
-
-    </div>
-  )
+  return <div>music</div>;
 }
-
