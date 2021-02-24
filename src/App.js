@@ -10,6 +10,7 @@ import Tour from "./routes/Tour"
 import Photos from "./routes/Photos"
 import Video from "./routes/Video"
 import Shop from "./routes/Shop"
+import Album from "./routes/Album"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
@@ -25,6 +26,7 @@ function App() {
         <Route exact path={"/photos"} component={Photos} />
         <Route exact path={"/video"} component={Video} />
         <Route exact path={"/shop"} component={Shop} />
+        <Route exact paht={"/album"} component={Album} />
       </Switch>
       <Footer />
     </div>
