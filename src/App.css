@@ -404,6 +404,7 @@
 
 .socials a:hover i {
   color: #dadada;
+  transform:scale(1.3);
 }
 
 /* KEIRA: ********************* MUSIC.js ************************************************************/
