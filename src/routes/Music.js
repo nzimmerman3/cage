@@ -1,7 +1,12 @@
 import React from "react";
 import '../App.css';
+
+import AlbumUP from "../images/unpeeled.png"
 import AlbumTMIP from "../images/tell-me-im-pretty.jpg";
 import AlbumM from "../images/melophobia.jpg";
+import AlbumSC from "../images/social-cues.jpg"
+import AlbumTYHB from "../images/thank-you-happy-birthday.jpg"
+import AlbumCTE from "../images/cage-the-elephant.jpg"
 
 import Album from "./Album"
 
@@ -19,8 +24,12 @@ export default function Music(props) {
 
   const albums =
     [
+      { "name": "SC", "loc": AlbumSC },
+      { "name": "UP", "loc": AlbumUP },
       { "name": "TMIP", "loc": AlbumTMIP },
       { "name": "M", "loc": AlbumM },
+      { "name": "TYHB", "loc": AlbumTYHB },
+      { "name": "CTE", "loc": AlbumCTE },
     ]
 
   return (
@@ -50,46 +59,6 @@ export default function Music(props) {
 
 
         </Swiper>
-
-        {/* <ul className="album-list">
-
-          {albums.map((al) => {
-            return <li className="album">
-              <Link to={{ pathname: `/album`, title: al["name"] }}>
-                <img src={al["loc"]}></img>
-              </Link>
-            </li>
-          })}
-        </ul> */}
-
-
-        {/* <div className="music-content">
-          
-
-          <div className="song">
-          <div className="song-container">
-            <ul className="song-left">
-              <a>
-                <li><h1>06: Halo</h1>
-                  <h2>Melophobia</h2>
-                  <div className="follow-button"><p>Follow</p></div></li>
-              </a>
-              <a>
-                <li><img src={AlbumM} alt="album" /></li>
-              </a>
-            </ul>
-            <ul className="song-right">
-              <a>
-                <li>
-                  <p><img src={SpotifyLogo} /></p>
-                </li>
-              </a>
-            </ul>
-          </div>
-        </div>
-
-        </div> */}
-
       </section>
     </main >
   );
