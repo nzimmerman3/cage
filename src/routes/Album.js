@@ -14,12 +14,12 @@ export default function Album(props) {
     "M": "spotify:album:4EK8gtQfdVsmDTji7gBFlz",
     "TMIP": "spotify:album:0nW0w37lrQ87k7PLZvC4qJ"
   }
-  console.log(props.location.title)
+  console.log(props)
 
   return (
     < div >
       <SpotifyPlayer
-        uri={uris[props.location.title]}
+        uri={uris[props.title]}
         size={size}
         view={view}
         theme={theme}

@@ -2,13 +2,17 @@ import React from "react";
 import '../App.css';
 import AlbumTMIP from "../images/tell-me-im-pretty.jpg";
 import AlbumM from "../images/melophobia.jpg";
-import SpotifyLogo from "../images/spotify-logo-white.png";
 
-import {
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Album from "./Album"
+
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/swiper.scss"
+import 'swiper/components/navigation/navigation.scss';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
+
 
 export default function Music(props) {
 
@@ -16,9 +20,8 @@ export default function Music(props) {
   const albums =
     [
       { "name": "TMIP", "loc": AlbumTMIP },
-      { "name": "M", "loc": AlbumM }
+      { "name": "M", "loc": AlbumM },
     ]
-  // const album_names = { AlbumTMIP: "TMIP", AlbumM: "M" }
 
   return (
     <main>
@@ -29,7 +32,26 @@ export default function Music(props) {
           <p>Music</p>
         </div>
 
-        <ul className="album-list">
+        <Swiper
+          className="album-list"
+          loop
+          navigation
+          spaceBetween={50}
+          slidesPerView={1}
+
+        >
+          {albums.map((al) => {
+            return <SwiperSlide className="album">
+              <img src={al["loc"]}></img>
+              <Album title={al["name"]} />
+            </SwiperSlide>
+          })}
+          <div class="swiper-pagination"></div>
+
+
+        </Swiper>
+
+        {/* <ul className="album-list">
 
           {albums.map((al) => {
             return <li className="album">
@@ -38,7 +60,8 @@ export default function Music(props) {
               </Link>
             </li>
           })}
-        </ul>
+        </ul> */}
+
 
         {/* <div className="music-content">
           
