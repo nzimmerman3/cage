@@ -9,6 +9,7 @@ import AlbumTYHB from "../images/thank-you-happy-birthday.jpg"
 import AlbumCTE from "../images/cage-the-elephant.jpg"
 
 import Album from "./Album"
+import Header from "../components/SubHeader"
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -24,23 +25,18 @@ export default function Music(props) {
 
   const albums =
     [
-      { "name": "SC", "loc": AlbumSC },
-      { "name": "UP", "loc": AlbumUP },
-      { "name": "TMIP", "loc": AlbumTMIP },
-      { "name": "M", "loc": AlbumM },
-      { "name": "TYHB", "loc": AlbumTYHB },
-      { "name": "CTE", "loc": AlbumCTE },
+      { "name": "SOCIAL CUES", "loc": AlbumSC },
+      { "name": "UNPEELED", "loc": AlbumUP },
+      { "name": "TELL ME I'M PRETTY", "loc": AlbumTMIP },
+      { "name": "MELOPHOBIA", "loc": AlbumM },
+      { "name": "THANK YOU HAPPY BIRTHDAY", "loc": AlbumTYHB },
+      { "name": "CAGE THE ELEPHANT", "loc": AlbumCTE },
     ]
 
   return (
     <main>
-
+      <Header />
       <section className="music">
-
-        <div className="music-header">
-          <p>Music</p>
-        </div>
-
         <Swiper
           className="album-list"
           loop

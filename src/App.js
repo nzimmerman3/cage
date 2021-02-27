@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Header from "./components/Header"
 import MainContent from "./components/MainContent"
 import Footer from "./components/Footer"
 import News from "./routes/News"
@@ -17,7 +16,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 function App() {
   return (
     <div>
-      <Header />
       <Switch>
         <Route exact path={"/"} component={MainContent} />
         <Route exact path={"/news"} component={News} />

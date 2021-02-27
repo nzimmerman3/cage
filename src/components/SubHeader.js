@@ -6,11 +6,11 @@ import {
   Link
 } from "react-router-dom";
 
-function Header() {
+function SubHeader() {
   return (
-    <div className="home-navbar">
-      <div className="home-navbar-content">
-        <ul className="home-navbar-left">
+    <div className="sub-navbar">
+      <div className="sub-navbar-content">
+        <ul className="sub-navbar-left">
           <li>
             <Link to="/news">News</Link>
           </li>
@@ -21,12 +21,12 @@ function Header() {
             <Link to="/tour">Tour</Link>
           </li>
         </ul>
-        <div className="home-navbar-center" id="logo">
+        <div className="sub-navbar-center" id="logo">
           <li>
             <Link to="/"><img src={Logo} width="245" alt="" /></Link>
           </li>
         </div>
-        <ul className="home-navbar-right">
+        <ul className="sub-navbar-right">
           <li>
             <Link to="/shop">Shop</Link>
           </li>
@@ -42,4 +42,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default SubHeader;

@@ -1,8 +1,12 @@
 import React from "react";
+import Header from "./Header"
+import Newsletter from "./Newsletter"
 
 function MainContent() {
   return (
     <main>
+      <Header />
+
       <section className="tour" id="tour">
         <div className="tour-header">
           <p>Tour</p>
@@ -120,6 +124,7 @@ function MainContent() {
           </div>
         </div>
       </section>
+      <Newsletter />
     </main>
   );
 }
