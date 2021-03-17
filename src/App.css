@@ -148,10 +148,10 @@
   background-size: cover;
   box-sizing: border-box;
 
-  margin-top: 45%;
+  margin-top: 55%;
   padding-top: 240px;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .tour-header {
   width: 69vh;
@@ -161,11 +161,9 @@
 
   display: table;
   text-align: center;
-  margin-top: 80px;
+  margin-top: -200px;
   margin-bottom: 0px;
 
-  position: absolute;
-  top: 94%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -179,7 +177,7 @@
   padding-top: 10px;
   font-family: "Courier Prime", monospace;
   color: white;
-  font-size: 46px;
+  font-size: 4vh;
   text-transform: uppercase;
   vertical-align: middle;
   height: 100%;
@@ -194,7 +192,7 @@
   background-color: rgba(0, 0, 0, 0.97);
   box-sizing: border-box;
 
-  margin-top: 12%;
+  margin-top: 12vh;
   padding-top: 0px;
   padding-left: 20px;
   padding-right: 20px;
@@ -227,7 +225,7 @@
   float: right;
   height: 100%;
   display: table;
-  padding: 0px 190px;
+  padding: 0vw 5vw; /* spacing between event data / columns (DATE VENUE LOCATION) */
   /* background-color: blue; */
 }
 
@@ -238,7 +236,7 @@
 
 .event-left a li {
   font-family: "Courier Prime", monospace;
-  font-size: 30px;
+  font-size: 1.6vw; /* font size for event data (DATE VENUE LOCATION) */
   color: white;
   height: 100%;
   display: table-cell;
@@ -261,7 +259,7 @@
 }
 .event-right a li {
   font-family: "Courier Prime", monospace;
-  font-size: 30px;
+  font-size: 1.6vw; /* font size for event (GET TICKETS button) */
   color: black;
   text-transform: uppercase;
   background-color: white;
@@ -270,7 +268,7 @@
 
   height: 80%;
   line-height: 75px;
-  width: 290px;
+  width: 20vw;
 }
 .event-right a:hover li {
   color: white;

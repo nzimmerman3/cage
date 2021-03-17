@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header"
 import Newsletter from "./Newsletter"
+import BlackTape from "../images/black-tape.png";
 
 function MainContent() {
   return (
@@ -9,7 +10,7 @@ function MainContent() {
 
       <section className="tour" id="tour">
         <div className="tour-header">
-          <p>Tour</p>
+          <p><img src={BlackTape} width="245" alt="" /></p>
         </div>
         <div className="tour-content">
           <div className="event">
