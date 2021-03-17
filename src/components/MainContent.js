@@ -5,150 +5,153 @@ import BlackTape from "../images/black-tape.png";
 
 function MainContent() {
   return (
-    <main>
-      <Header />
+    <div className="main">
+      <main>
+        <Header />
 
-      <section className="tour" id="tour">
-        <div className="tour-header">
-          <p><img src={BlackTape} width="245" alt="" /></p>
-        </div>
-        <div className="tour-content">
-          <div className="event">
-            <div className="event-container">
-              <ul className="event-left">
-                <a>
-                  <li>Location</li>
-                </a>
-                <a>
-                  <li>Venue</li>
-                </a>
-                <a>
-                  <li>Date</li>
-                </a>
-              </ul>
-              <ul className="event-right">
-                <a>
-                  <li>
-                    <p>Get Tickets</p>
-                  </li>
-                </a>
-              </ul>
+        <section className="tour" id="tour">
+          <div className="tour-header">
+            <p><img src={BlackTape} width="245" alt="" /></p>
+          </div>
+          <div className="tour-content">
+            <div className="event">
+              <div className="event-container">
+                <ul className="event-left">
+                  <a>
+                    <li>Location</li>
+                  </a>
+                  <a>
+                    <li>Venue</li>
+                  </a>
+                  <a>
+                    <li>Date</li>
+                  </a>
+                </ul>
+                <ul className="event-right">
+                  <a>
+                    <li>
+                      <p>Get Tickets</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div className="event">
+              <div className="event-container">
+                <ul className="event-left">
+                  <a>
+                    <li>Location</li>
+                  </a>
+                  <a>
+                    <li>Venue</li>
+                  </a>
+                  <a>
+                    <li>Date</li>
+                  </a>
+                </ul>
+                <ul className="event-right">
+                  <a>
+                    <li>
+                      <p>Get Tickets</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div className="event">
+              <div className="event-container">
+                <ul className="event-left">
+                  <a>
+                    <li>Location</li>
+                  </a>
+                  <a>
+                    <li>Venue</li>
+                  </a>
+                  <a>
+                    <li>Date</li>
+                  </a>
+                </ul>
+                <ul className="event-right">
+                  <a>
+                    <li>
+                      <p>Get Tickets</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div className="event">
+              <div className="event-container">
+                <ul className="event-left">
+                  <a>
+                    <li>Location</li>
+                  </a>
+                  <a>
+                    <li>Venue</li>
+                  </a>
+                  <a>
+                    <li>Date</li>
+                  </a>
+                </ul>
+                <ul className="event-right">
+                  <a>
+                    <li>
+                      <p>Get Tickets</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div className="event">
+              <div className="event-container">
+                <ul className="event-left">
+                  <a>
+                    <li>Location</li>
+                  </a>
+                  <a>
+                    <li>Venue</li>
+                  </a>
+                  <a>
+                    <li>Date</li>
+                  </a>
+                </ul>
+                <ul className="event-right">
+                  <a>
+                    <li>
+                      <p>Get Tickets</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div className="event">
+              <div className="event-container">
+                <ul className="event-left">
+                  <a>
+                    <li>Location</li>
+                  </a>
+                  <a>
+                    <li>Venue</li>
+                  </a>
+                  <a>
+                    <li>Date</li>
+                  </a>
+                </ul>
+                <ul className="event-right">
+                  <a>
+                    <li>
+                      <p>Get Tickets</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="event">
-            <div className="event-container">
-              <ul className="event-left">
-                <a>
-                  <li>Location</li>
-                </a>
-                <a>
-                  <li>Venue</li>
-                </a>
-                <a>
-                  <li>Date</li>
-                </a>
-              </ul>
-              <ul className="event-right">
-                <a>
-                  <li>
-                    <p>Get Tickets</p>
-                  </li>
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div className="event">
-            <div className="event-container">
-              <ul className="event-left">
-                <a>
-                  <li>Location</li>
-                </a>
-                <a>
-                  <li>Venue</li>
-                </a>
-                <a>
-                  <li>Date</li>
-                </a>
-              </ul>
-              <ul className="event-right">
-                <a>
-                  <li>
-                    <p>Get Tickets</p>
-                  </li>
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div className="event">
-            <div className="event-container">
-              <ul className="event-left">
-                <a>
-                  <li>Location</li>
-                </a>
-                <a>
-                  <li>Venue</li>
-                </a>
-                <a>
-                  <li>Date</li>
-                </a>
-              </ul>
-              <ul className="event-right">
-                <a>
-                  <li>
-                    <p>Get Tickets</p>
-                  </li>
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div className="event">
-            <div className="event-container">
-              <ul className="event-left">
-                <a>
-                  <li>Location</li>
-                </a>
-                <a>
-                  <li>Venue</li>
-                </a>
-                <a>
-                  <li>Date</li>
-                </a>
-              </ul>
-              <ul className="event-right">
-                <a>
-                  <li>
-                    <p>Get Tickets</p>
-                  </li>
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div className="event">
-            <div className="event-container">
-              <ul className="event-left">
-                <a>
-                  <li>Location</li>
-                </a>
-                <a>
-                  <li>Venue</li>
-                </a>
-                <a>
-                  <li>Date</li>
-                </a>
-              </ul>
-              <ul className="event-right">
-                <a>
-                  <li>
-                    <p>Get Tickets</p>
-                  </li>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Newsletter />
-    </main>
+        </section>
+        <Newsletter />
+      </main>
+    </div>
+
   );
 }
 

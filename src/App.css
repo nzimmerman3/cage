@@ -141,6 +141,14 @@
 
 /* TODO: make section collapsible / add a "more dates" button */
 /* TODO: add eyes/lips icons/animations */
+
+.main {
+  background-image: url("images/table.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .tour {
   height: 1800px;
   background-image: url("images/stripe-tears.png");
@@ -449,6 +457,12 @@
   background-color: rgb(22,22,22);
   box-sizing: border-box;
 }
+
+.music-total {
+  width: 90%;
+  margin: auto;
+}
+
 .music-header {
   width: 100%;
   height: 14vh;
@@ -476,5 +490,28 @@
   margin-top: 150px;
   margin-bottom: 100px;
   margin-left: 38%;
+}
 
+/* Photos */
+
+.photo-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.photo > img {
+  height: 300px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.photo > img:hover {
+
+}
+
+.photo:hover {
+  transform: scale(1.09);
 }

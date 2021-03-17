@@ -20,7 +20,7 @@ export default function Album(props) {
   }
 
   return (
-    < div >
+    < div className="music-total">
       <div className="music-header">
         {props.title}
       </div>
