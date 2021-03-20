@@ -24,6 +24,7 @@ export default function Album(props) {
       <div className="music-header">
         {props.title}
       </div>
+      <img src={props.loc} ></img>
       <SpotifyPlayer
         uri={uris[props.title]}
         size={size}
