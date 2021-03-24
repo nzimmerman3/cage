@@ -1,15 +1,16 @@
 import React from 'react'
-import Pic from "../images/display-photos/group-photo.jpg"
+import Pic1 from "../images/display-photos/group-photo.jpg"
+import Pic2 from "../images/display-photos/austin-show.jpeg"
 import Header from "../components/SubHeader"
 
 
 
 export default function Photos() {
 
-  const photos = [Pic, Pic, Pic, Pic, Pic, Pic, Pic, Pic]
+  const photos = [Pic1, Pic2, Pic1, Pic1, Pic1, Pic1, Pic1, Pic1, Pic1]
 
   return (
-    <div>
+    <div className="photo">
       <Header />
       <div className="photo-display">
         {photos.map((p) => {

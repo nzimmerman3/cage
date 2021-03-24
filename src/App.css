@@ -391,6 +391,7 @@
   background-repeat: no-repeat;
   background-size: cover; */
   background: #000000;
+
   padding: 30px 0;
   text-align: center;
   display: block;
@@ -492,6 +493,10 @@
 }
 
 /* Photos */
+.photo {
+  background-color: rgb(22,22,22);
+
+}
 
 .photo-display {
   display: flex;
@@ -499,18 +504,19 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
+
 }
 
 .photo > img {
   height: 300px;
   width: 500px;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .photo > img:hover {
+  transform: scale(1.09);
 
 }
 
 .photo:hover {
-  transform: scale(1.09);
 }
