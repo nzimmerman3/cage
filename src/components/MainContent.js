@@ -7,10 +7,35 @@ function MainContent() {
   return (
     <main>
       <Header />
-
-      <section className="tour" id="tour">
+      <div className="tour" id="tour">
+        <div class="col-lg-12" className="tour-header">
+          <img src={BlackTape} class="img-responsive center-block d-block mx-auto" alt="" width="400px"/>
+          <p class="text-center">Tour</p>
+        </div>
+        {/* <div className="tour-header"><p>Tour</p></div> */}
+        <div className="tour-content" >
+          <div className="event" class="row event-border">
+            <div className="event-left">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                  <div>14th February 2021</div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                  <div>Wardrobe Presented by Crash Records</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                  <div>Leeds, United Kingdom</div>
+                </div>
+              </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+              <button type="button" class="btn btn-default btn-xl">Get Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <section className="tour" id="tour">
         <div className="tour-header">
-          <p><img src={BlackTape} width="245" alt="" /></p>
+          <img src={BlackTape} alt="" />
+          <p>Tour</p>
         </div>
         <div className="tour-content">
           <div className="event">
@@ -146,7 +171,7 @@ function MainContent() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Newsletter />
     </main>
   );

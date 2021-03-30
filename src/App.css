@@ -45,6 +45,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  /* color: white !important; */
 }
 
 /* keira: ===== HEADER / NAV-BAR ====== */
@@ -65,6 +66,7 @@
   text-decoration: underline;
 }
 .home-navbar a:hover {
+  color: #f2f2f2;
   text-decoration: none;
 }
 .home-navbar-center a {
@@ -105,6 +107,7 @@
   text-decoration: underline;
 }
 .sub-navbar a:hover {
+  color: white;
   text-decoration: none;
 }
 .sub-navbar-center a {
@@ -152,36 +155,55 @@
   padding-top: 240px;
   padding-left: 6rem;
   padding-right: 6rem;
+
+  position:relative;
 }
 .tour-header {
-  width: 69vh;
-  height: 24vh;
-  margin-left: auto;
-  margin-right: auto;
-
-  display: table;
-  text-align: center;
+  /* position:absolute; */
   margin-top: -200px;
-  margin-bottom: 0px;
+  /* background-color: red;; */
+  /* width: 69vh;
+  height: 24vh; */
+  /* margin-left: auto;
+  margin-right: auto; */
 
-  left: 0;
+  /* display: table;
+  text-align: center;
+  margin-top: -210px;
+  margin-bottom: 0px; */
+
+  /* left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: 1; */
+  /* position: relative;
   background-color: transparent;
   background-image: url(./images/black-tape.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+.tour-header img {
+  /* width: 34vw;
+  position: relative;
+  left: 0;
+  top: 0; */
 }
 .tour-header p {
-  padding-top: 10px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+
   font-family: "Courier Prime", monospace;
   color: white;
-  font-size: 4vh;
+  font-size: 24px;
   text-transform: uppercase;
-  vertical-align: middle;
-  height: 100%;
+  /* height: 100%;
   display: table-cell;
+  margin: 0 auto 0 auto; */
+
+  /* background-color: #61dafb; */
 }
 .tour-content {
   position: relative;
@@ -200,79 +222,109 @@
 
 .event {
   background: black;
-
-  text-align: center;
   display: block;
 
   margin-left: auto;
   margin-right: auto;
   width: 97%;
 
-  height: 160px;
-  line-height: 160px;
+  height: 120px;
+  /* line-height: 160px; */
+
   /* Increase this as per requirement */
   border-bottom-style: solid;
   border-bottom-width: 0.1px;
   color: white;
+
+  padding-top: 20px;
+  text-align: left;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+}
+
+.event-left div {
+  /* vertical-align: middle !important; */
+}
+
+.btn {
+  background-color: white !important;
+  border-radius: 0 !important;
+  font-size: 22px !important;
+  text-transform: uppercase;
+  color: black !important;
+  border-color: white !important;
+  align-content: right !important;
+  text-align: center;
+}
+.btn:hover{
+  background-color: red !important;
+  border-color: red !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  color: white !important;
+}
+.btn-xl {
+  padding: 11px 20px !important;
+  width: 90%;
+  text-align: center;
+  font-size: 18px !important;
+  /* width:90%;         TODO: make so button's width is 100% when xs-view*/ 
 }
 
 .event-left {
-  float: left;
-  height: 100%;
+
+  /* float: left;
+  height: 100%; */
 }
 
-.event-left a {
-  float: right;
-  height: 100%;
-  display: table;
-  padding: 0vw 5vw; /* spacing between event data / columns (DATE VENUE LOCATION) */
-  /* background-color: blue; */
-}
-
-/* psuedo-selector: targets only the last element on the left in <a>*/
-.event-left a:last-child {
-  padding-left: 0px;
-}
-
-.event-left a li {
-  font-family: "Courier Prime", monospace;
-  font-size: 1.6vw; /* font size for event data (DATE VENUE LOCATION) */
-  color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
+.event-right {
+  /* text-align: center; */
+  /* float: left;
+  height: 100%; */
 }
 
 .event-right {
   float: right;
   height: 80%;
 }
-.event-right a {
+.event-right div {
   float: right;
   float: right;
   display: table;
 
-  margin-top: 40px; /* top margin of get tickets button */
+  margin-top: 10px; /* top margin of get tickets button */
 }
-.event-right a:last-child {
-  margin-right: 40px;
+.event-right div:last-child {
+  margin-right: 10px;
 }
-.event-right a li {
+.event-right div li {
   font-family: "Courier Prime", monospace;
-  font-size: 1.6vw; /* font size for event (GET TICKETS button) */
+  font-size: 22px; /* font size for event (GET TICKETS button) */
   color: black;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   background-color: white;
   display: table-cell;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 
-  height: 80%;
-  line-height: 75px;
+  height: 100%;
+  line-height: 55px;
   width: 20vw;
 }
-.event-right a:hover li {
+.event-right div:hover li {
   color: white;
   background-color: red;
+}
+
+.event-border {
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  color: white;
+}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
 }
 
 /* keira: =========== FOOTER ============ */
