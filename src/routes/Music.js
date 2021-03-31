@@ -11,12 +11,16 @@ import AlbumCTE from "../images/cage-the-elephant.jpg"
 import Album from "./Album"
 import Header from "../components/SubHeader"
 
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/swiper.scss"
 import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss'
+import 'swiper/components/controller/controller.scss'
+import 'swiper/components/scrollbar/scrollbar.scss'
+import 'swiper/components/effect-coverflow/effect-coverflow.scss'
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
 
 
@@ -40,15 +44,22 @@ export default function Music(props) {
         <Swiper
           className="album-list"
           loop
-          navigation
+          effect="coverflow"
+          coverflowEffect={{
+            // rotate: 50,
+            // stretch: 0,
+            // depth: 100,
+            // modifier: 1,
+            slideShadows: false,
+          }}
+          scrollbar={{draggable: true}}
           spaceBetween={50}
-          slidesPerView={1}
+          slidesPerView={3}
 
         >
           {albums.map((al) => {
             return <SwiperSlide className="album">
-              <img src={al["loc"]}></img>
-              <Album title={al["name"]} />
+              <Album title={al["name"]} loc={al["loc"]} />
             </SwiperSlide>
           })}
           <div class="swiper-pagination"></div>

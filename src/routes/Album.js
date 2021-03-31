@@ -20,10 +20,11 @@ export default function Album(props) {
   }
 
   return (
-    < div >
+    < div className="music-total">
       <div className="music-header">
         {props.title}
       </div>
+      <img src={props.loc} ></img>
       <SpotifyPlayer
         uri={uris[props.title]}
         size={size}
