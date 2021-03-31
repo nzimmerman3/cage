@@ -150,6 +150,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 .tour {
@@ -158,6 +159,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
+  background-position: center;
 
   margin-top: 55%;
   padding-top: 240px;
@@ -174,11 +176,11 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 100px;
+  top: 110px;
 
   font-family: "Courier Prime", monospace;
   color: white;
-  font-size: 24px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 .tour-content {
@@ -190,8 +192,14 @@
   background-color: rgba(0, 0, 0, 0.97);
   box-sizing: border-box;
 
-  margin-top: 12vh;
+  margin-top: 11vh;
   padding-top: 0px;
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  text-align: center;
   
 }
 
@@ -199,6 +207,7 @@
   background: black;
   display: block;
   height: 120px;
+  width: 98%;
 
   /* Increase this as per requirement */
   border-bottom-style: solid;
@@ -210,7 +219,7 @@
   font-size: 18px;
 
   margin-left: 20px !important;
-margin-right:20px!important;
+  margin-right:20px!important;
 }
 .in-middle{
   position: absolute;
@@ -236,9 +245,10 @@ margin-right:20px!important;
 }
 .btn-xl {
   padding: 11px 20px !important;
-  width: 100%;
   text-align: center;
   font-size: 18px !important;
+  width: 100%;
+  /* min-width:180px; */
   /* width:90%;         TODO: make so button's width is 100% when xs-view*/ 
 }
 .button-padding {
@@ -261,6 +271,7 @@ margin-right:20px!important;
   background-image: url("images/black-paper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   /* background: #111111; */
   height: auto;
   font-family: "Open Sans";
