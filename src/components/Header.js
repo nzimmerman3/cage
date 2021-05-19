@@ -18,7 +18,7 @@ function Header() {
             <Link to="/music">Music</Link>
           </li>
           <li>
-            <Link to="/tour">Tour</Link>
+            <a href="#tour">Tour</a>
           </li>
         </ul>
         <div className="home-navbar-center" id="logo">

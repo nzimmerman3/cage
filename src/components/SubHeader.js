@@ -18,7 +18,8 @@ function SubHeader() {
             <Link to="/music">Music</Link>
           </li>
           <li>
-            <Link to="/tour">Tour</Link>
+            <Link to="#tour">Tour</Link>
+            {/* FIXME: currently going from /music to /music#tour instead of #tour */}
           </li>
         </ul>
         <div className="sub-navbar-center" id="logo">

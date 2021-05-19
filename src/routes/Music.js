@@ -28,13 +28,14 @@ export default function Music(props) {
 
 
   const albums =
-    [
-      { "name": "SOCIAL CUES", "loc": AlbumSC },
-      { "name": "UNPEELED", "loc": AlbumUP },
-      { "name": "TELL ME I'M PRETTY", "loc": AlbumTMIP },
-      { "name": "MELOPHOBIA", "loc": AlbumM },
-      { "name": "THANK YOU HAPPY BIRTHDAY", "loc": AlbumTYHB },
-      { "name": "CAGE THE ELEPHANT", "loc": AlbumCTE },
+    [ 
+      // UPPERCASE -> PascalCase
+      { "name": "Cage The Elephant", "loc": AlbumCTE },
+      { "name": "Melophobia", "loc": AlbumM },
+      { "name": "Thank You Happy Birthday", "loc": AlbumTYHB },
+      { "name": "Social Cues", "loc": AlbumSC },
+      { "name": "Unpeeled", "loc": AlbumUP },
+      { "name": "Tell Me I'm Pretty", "loc": AlbumTMIP },
     ]
 
   return (
@@ -46,7 +47,7 @@ export default function Music(props) {
           loop
           effect="coverflow"
           coverflowEffect={{
-            // rotate: 50,
+            //rotate: 50,
             // stretch: 0,
             // depth: 100,
             // modifier: 1,

@@ -106,6 +106,9 @@
   text-transform: uppercase;
   text-decoration: underline;
 }
+.sub-navbar a:visited {
+  color: #f2f2f2;
+}
 .sub-navbar a:hover {
   color: white;
   text-decoration: none;
@@ -163,8 +166,8 @@
 
   margin-top: 55%;
   padding-top: 240px;
-  padding-left: 9rem;
-  padding-right: 9rem;
+  /* padding-left: 9rem;
+  padding-right: 9rem; */
 
   position:relative;
 }
@@ -184,23 +187,28 @@
   text-transform: uppercase;
 }
 .tour-content {
-  position: relative;
+  /* position: relative;
   top: 0;
-  left: 0;
+  left: 0; */
 
   height: 1000px;
   background-color: rgba(0, 0, 0, 0.97);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 
   margin-top: 11vh;
   padding-top: 0px;
-
+/* 
   display: flex;
   align-items: center;
 
   flex-direction: column;
-  text-align: center;
+  text-align: center; */
   
+}
+#outerDiv{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .event {
@@ -208,25 +216,27 @@
   display: block;
   height: 120px;
   width: 98%;
+  
 
   /* Increase this as per requirement */
-  border-bottom-style: solid;
-  border-bottom-width: 0.1px;
+  /* border-bottom-style: solid;
+  border-bottom-width: 0.1px; */
   color: white;
 
   text-align: left;
   font-family: "Courier Prime", monospace;
   font-size: 18px;
-
-  margin-left: 20px !important;
-  margin-right:20px!important;
 }
-.in-middle{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.event-left {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
-
+.event-right {
+  display:inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
 .btn {
   background-color: white !important;
   border-radius: 0 !important;
@@ -449,24 +459,34 @@
 .music-total {
   width: 100%;
   margin: auto;
+
+  margin-top: 45%;
 }
 
 .music-header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 120px;
 
   z-index: 1;
   color: #f2f2f2;
   text-align: center;
-  font-family: "Courier Prime", monospace;
+  font-family: "Circular Std Bold";
   font-size: 3em;
-  text-transform: uppercase;
+}
+.music-subheader {
+  margin-bottom: 120px;
+
+  color: #5d5d5d;
+  text-align: center;
+  font-family: 'Circular Std Book';
+  font-size: 1.2em;
+  font-weight: 50;
 }
 
 .swiper-slide img {
-  width: 80%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
