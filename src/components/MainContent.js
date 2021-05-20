@@ -20,7 +20,7 @@ function MainContent() {
           <div class="tour-content col-md-10 col-md-offset-1 container">
             {/* ------ EVENT 1 ------ */}
             <div id="outerDiv" class="event row no-gutter center-block vert-center">
-              <div class="col-lg-7 no-gutter">
+              <div class="col-lg-7 no-gutter vert-center">
 
                 <div class="col-lg-4 ">
                   <div>14th February 2021</div>

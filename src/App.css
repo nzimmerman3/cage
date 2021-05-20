@@ -212,15 +212,15 @@
 }
 
 .event {
-  background: red;
+  background: black;
   display: block;
   height: 120px;
   width: 98%;
   
 
   /* Increase this as per requirement */
-  /* border-bottom-style: solid;
-  border-bottom-width: 0.1px; */
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
   color: white;
 
   text-align: left;
