@@ -32,11 +32,13 @@ function MainContent() {
               </div>
               <div class="col-lg-5 no-gutter">
                 
-                <div class="col-lg-7 ">
+                <div class="col-lg-7 gutter">
                   <div>Leeds, United Kingdom</div>
                 </div>
-                <div class="col-lg-5">
-                  <button type="button" class="btn btn-default btn-xl">Get Tickets</button>
+                <div class="col-lg-5 gutter">
+                  {/* <div class="col-lg-12"> */}
+                    <button type="button" class="btn btn-default btn-xl">Get Tickets</button>
+                  {/* </div> */}
                 </div>
 
               </div>
