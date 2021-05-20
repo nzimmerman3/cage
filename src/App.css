@@ -237,6 +237,13 @@
   height: 100%;
   vertical-align: middle;
 }
+.event-info {
+  margin-top: 8px;
+}
+.vert-center {
+  display: flex;
+  align-items: center;
+}
 .btn {
   background-color: white !important;
   border-radius: 0 !important;
