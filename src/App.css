@@ -150,6 +150,7 @@
 
 .main {
   background-image: url("images/table.jpg");
+  /* url('images/chrome-initials.gif'), */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

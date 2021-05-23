@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./Header"
 import Newsletter from "./Newsletter"
 import BlackTape from "../images/black-tape.png";
+import ChromeInitials from "../images/chrome-initials.gif";
+import EventsList from "../routes/EventsList";
 
 function MainContent() {
   return (
@@ -9,6 +11,8 @@ function MainContent() {
       <main>
 
         <Header />
+
+        {/* <img src={ChromeInitials} class="img-responsive center-block d-block mx-auto" alt="" width="500px"/> */}
 
         <div className="tour" id="tour">
           
@@ -19,7 +23,8 @@ function MainContent() {
 
           <div class="tour-content col-md-10 col-md-offset-1 container">
             {/* ------ EVENT 1 ------ */}
-            <div id="outerDiv" class="event row no-gutter center-block vert-center">
+            <EventsList></EventsList>
+            {/* <div id="outerDiv" class="event row no-gutter center-block vert-center">
               <div class="col-lg-7 no-gutter vert-center">
 
                 <div class="col-lg-4 ">
@@ -36,13 +41,11 @@ function MainContent() {
                   <div>Leeds, United Kingdom</div>
                 </div>
                 <div class="col-lg-5 gutter">
-                  {/* <div class="col-lg-12"> */}
                     <button type="button" class="btn btn-default btn-xl">Get Tickets</button>
-                  {/* </div> */}
                 </div>
 
               </div>
-            </div>
+            </div> */}
             {/* ------ EVENT 1 ------ */}
           </div>
         </div>
