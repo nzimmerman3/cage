@@ -253,10 +253,8 @@
   border-color: white !important;
   align-content: right !important;
   text-align: center;
-
-
 }
-.btn:hover{
+.get-tickets:hover{
   background-color: red !important;
   border-color: red !important;
   border-radius: 0 !important;
@@ -283,6 +281,17 @@
 .button-padding {
   padding-left:0;
   padding-right: 25px !important;
+}
+.sold-out {
+  background-color: red !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  color: black !important;
+  border-color: red !important;
+  align-content: right !important;
+  text-align: center;
+
+  text-decoration: line-through !important;
 }
 .event-border {
   border-bottom-style: solid;

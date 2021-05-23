@@ -28,7 +28,7 @@ function Event({event}) {
 
               </div>
             </div>
-            
+
         </div>
     )
 }
@@ -36,10 +36,10 @@ function Event({event}) {
 function getButton(onSale) {
     switch (onSale) {
         case 'Y':
-            return <button type="button" class="btn btn-default btn-xl">Get Tickets</button>
+            return <button type="button" class="get-tickets btn btn-default btn-xl">Get Tickets</button>
             break;
         case 'N':
-            return <button type="button" class="btn btn-default btn-xl">Sold Out</button>
+            return <button type="button" class="sold-out btn btn-default btn-xl">Sold Out</button>
             break;
         }
 }
