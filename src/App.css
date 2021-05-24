@@ -177,6 +177,8 @@
   padding-right: 9rem; */
 
   position:relative;
+
+  margin-bottom: -105px;
 }
 .tour-header {
   margin-top: -200px;
@@ -198,7 +200,7 @@
   top: 0;
   left: 0; */
 
-  height: 1000px;
+  height: 1230px;
   background-color: rgba(0, 0, 0, 0.97);
   /* box-sizing: border-box; */
 
@@ -319,7 +321,7 @@
   /* background: #111111; */
   height: auto;
   font-family: "Open Sans";
-  padding-top: 100px;
+  padding-top: 120px;
   color: #ffffff;
 }
 
@@ -340,7 +342,7 @@
 }
 
 .footer-signature {
-  padding-bottom: 65px;
+  padding-bottom: 35px;
 }
 
 /* 1/19 */
@@ -383,7 +385,7 @@
   margin-right: 10px;
 }
 .subscribe-btn {
-  margin: 45px auto 140px;
+  margin: 45px auto 80px;
   width: 30%;
   display: block;
   outline: none;

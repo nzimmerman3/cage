@@ -15,10 +15,8 @@ function MainContent() {
 
         <img src={ChromeInitials} class="img-responsive center-block d-block mx-auto" alt="" width="500px"/>
 
-        <div className="main-content">
-          <Tour />
-          <Newsletter />
-        </div>
+        <Tour />
+        <Newsletter />
 
       </main>
     </div>
