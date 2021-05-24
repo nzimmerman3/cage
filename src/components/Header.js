@@ -31,7 +31,8 @@ function Header() {
             <Link to="/shop"><p className="line">Shop</p></Link>
           </li>
           <li>
-            <Link to="/video"><p className="line">Video</p></Link>
+            {/* <Link to="/video"><p className="line">Video</p></Link> */}
+            <a href="https://www.youtube.com/user/cagetheelephant" target="_blank"><p className="line">Video</p></a>
           </li>
           <li>
             <Link to="/photos"><p className="line">Photos</p></Link>

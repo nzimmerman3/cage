@@ -18,7 +18,7 @@ function SubHeader() {
             <Link to="/music"><p className="line">Music</p></Link>
           </li>
           <li>
-            <Link to="#tour"><p className="line">Tour</p></Link>
+            <Link to="/" href="#tour"><p className="line">Tour</p></Link>
             {/* FIXME: currently going from /music to /music#tour instead of #tour */}
           </li>
         </ul>
@@ -32,7 +32,8 @@ function SubHeader() {
             <Link to="/shop"><p className="line">Shop</p></Link>
           </li>
           <li>
-            <Link to="/video"><p className="line">Video</p></Link>
+            {/* <Link to="/video"><p className="line">Video</p></Link> */}
+            <a href="https://www.youtube.com/user/cagetheelephant" target="_blank"><p className="line">Video</p></a>
           </li>
           <li>
             <Link to="/photos"><p className="line">Photos</p></Link>

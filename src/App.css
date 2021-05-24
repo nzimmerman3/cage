@@ -538,7 +538,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .photo > img {
   height: 300px;
   width: 500px;
-  /* object-fit: contain; */
+  object-fit: cover;
 }
 
 .photo > img:hover {
