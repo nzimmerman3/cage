@@ -63,11 +63,11 @@
   font-family: "Courier Prime", monospace;
   font-size: 18px;
   text-transform: uppercase;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .home-navbar a:hover {
   color: #f2f2f2;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .home-navbar-center a {
   padding-bottom: 22px;
@@ -104,14 +104,14 @@
   font-family: "Courier Prime", monospace;
   font-size: 18px;
   text-transform: uppercase;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .sub-navbar a:visited {
   color: #f2f2f2;
 }
 .sub-navbar a:hover {
   color: white;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .sub-navbar-center a {
   padding-bottom: 22px;
@@ -134,13 +134,19 @@
   float: right;
 }
 
-/* TODO: replace "text-decoration: underline" w/ .line */
 .line {
+  line-height: 0.8;
   /* Increase this as per requirement */
-  padding-bottom: 15px;
+  margin-bottom: 0px;
   border-bottom-style: solid;
-  border-bottom-width: 3.1px;
+  border-bottom-width: 1.32px;
   width: fit-content;
+}
+.line p {
+  line-height: 1;
+}
+.line:hover {
+  border: transparent;
 }
 
 /* keira: =========== MAIN ============ */
@@ -429,14 +435,17 @@
   align-content: right;
   /* background-color: #e30404; */
   padding-top: 3px;
-  padding-right: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
 }
 .footer-bottom a {
   color: white;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .footer-bottom a:hover {
-  text-decoration: none;
+  color: white;
+  /* text-decoration: none; */
 }
 
 .socials {

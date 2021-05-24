@@ -12,13 +12,13 @@ function Header() {
       <div className="home-navbar-content">
         <ul className="home-navbar-left">
           <li>
-            <Link to="/news">News</Link>
+            <Link to="/news"><p className="line">News</p></Link>
           </li>
           <li>
-            <Link to="/music">Music</Link>
+            <Link to="/music"><p className="line">Music</p></Link>
           </li>
           <li>
-            <a href="#tour">Tour</a>
+            <a href="#tour"><p className="line">Tour</p></a>
           </li>
         </ul>
         <div className="home-navbar-center" id="logo">
@@ -28,13 +28,13 @@ function Header() {
         </div>
         <ul className="home-navbar-right">
           <li>
-            <Link to="/shop">Shop</Link>
+            <Link to="/shop"><p className="line">Shop</p></Link>
           </li>
           <li>
-            <Link to="/video">Video</Link>
+            <Link to="/video"><p className="line">Video</p></Link>
           </li>
           <li>
-            <Link to="/photos">Photos</Link>
+            <Link to="/photos"><p className="line">Photos</p></Link>
           </li>
         </ul>
       </div>
