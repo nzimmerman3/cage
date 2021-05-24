@@ -2,8 +2,7 @@ import React from "react";
 import Header from "./Header"
 import Newsletter from "./Newsletter"
 import Tour from "../routes/Tour"
-import ChromeInitials from "../images/chrome-initials.gif"
-import Footer from "./Footer"
+import ChromeCTE from "../images/chrome-initials.gif"
 
 
 function MainContent() {
@@ -13,7 +12,7 @@ function MainContent() {
 
         <Header />
 
-        <img src={ChromeInitials} class="img-responsive center-block d-block mx-auto" alt="" width="500px"/>
+        {/* <img src={ChromeCTE} class="img-responsive center-block d-block mx-auto" alt="" width="500px"/> */}
 
         <Tour />
         <Newsletter />
