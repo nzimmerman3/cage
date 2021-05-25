@@ -8,6 +8,7 @@ import Pic6 from "../images/display-photos/neil-krug-4.jpg"
 import Header from "../components/SubHeader"
 
 import Eye from "../images/blinking-eye.gif"
+import Lip from "../images/dripping-lip.gif"
 
 
 
@@ -24,6 +25,7 @@ export default function Photos() {
         <div className="gif-deco">
           <img src={Eye} class="img-responsive eye-1" alt=""/>
           <img src={Eye} class="img-responsive eye-2" alt=""/>
+          <img src={Lip} class="img-responsive lip-1" alt=""/>
         </div>
         
         <div className="photo-display">

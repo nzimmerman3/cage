@@ -552,13 +552,18 @@ a, a:hover, a:active, a:visited, a:focus {
 /* ======== GIF DECO: .photo section ========= */
 .eye-1 {
   width: 100px;
-  margin-top: 33vh;
+  margin-top: 15vh;
   margin-left: 4.6vw;
 }
 .eye-2 {
   width: 100px;
-  margin-top: 33vh;
-  margin-left: 80.6vw;
+  margin-top: 6vh;
+  margin-left: 80vw;
+}
+.lip-1 {
+  width:200px;
+  margin-top: 18vh;
+  margin-left: 6vw;
 }
 /* ======== ======================= ========= */
 

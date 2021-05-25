@@ -12,13 +12,13 @@ function SubHeader() {
       <div className="sub-navbar-content">
         <ul className="sub-navbar-left">
           <li>
-            <Link to="/news"><p className="line">News</p></Link>
+            <Link to="/#news" ><p className="line">News</p></Link>
           </li>
           <li>
             <Link to="/music"><p className="line">Music</p></Link>
           </li>
           <li>
-            <Link to="/" href="#tour"><p className="line">Tour</p></Link>
+            <Link to="/#tour" ><p className="line">Tour</p></Link>
             {/* FIXME: currently going from /music to /music#tour instead of #tour */}
           </li>
         </ul>
