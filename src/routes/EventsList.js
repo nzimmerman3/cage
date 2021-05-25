@@ -4,14 +4,14 @@ function EventsList() {
     const events = [
         {
             date: '09-05-2021',
-            venue: 'Bottlerock',
+            venue: 'Bottlerock Music Festival',
             city: 'Napa',
             country: 'CA',
             onSale: 'N'
         },
         {
             date: '09-10-2021',
-            venue: 'Beachlife Festival',
+            venue: 'Beachlife Music Festival',
             city: 'Redondo Beach',
             country: 'CA',
             onSale: 'Y'
@@ -32,7 +32,7 @@ function EventsList() {
         },
         {
             date: '09-26-2021',
-            venue: 'Pilgrimage Festival',
+            venue: 'Pilgrimage Music Festival',
             city: 'Franklin',
             country: 'TN',
             onSale: 'Y'

@@ -7,6 +7,8 @@ import Pic5 from "../images/display-photos/neil-krug-3.jpg"
 import Pic6 from "../images/display-photos/neil-krug-4.jpg"
 import Header from "../components/SubHeader"
 
+import Eye from "../images/blinking-eye.gif"
+
 
 
 export default function Photos() {
@@ -16,15 +18,25 @@ export default function Photos() {
   return (
     <div className="photo">
       <Header />
-      <div className="photo-display">
-        {photos.map((p) => {
-          return (<div className="photo">
-            <img src={p}>
-            </img>
-          </div>)
-        })}
 
+      <div className="photo-content">
+
+        <div className="gif-deco">
+          <img src={Eye} class="img-responsive eye-1" alt=""/>
+          <img src={Eye} class="img-responsive eye-2" alt=""/>
+        </div>
+        
+        <div className="photo-display">
+          {photos.map((p) => {
+            return (<div className="photo">
+              <img src={p}>
+              </img>
+            </div>)
+          })}
+        </div>
+        
       </div>
+
     </div>
 
   )
