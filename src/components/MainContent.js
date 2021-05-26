@@ -17,10 +17,10 @@ function MainContent() {
             <p class="text-center">Tour</p>
           </div>
 
-          <div class="tour-content col-md-10 col-md-offset-1 container h-100">
+          <div class="tour-content col-md-10 col-md-offset-1 container">
             {/* ------ EVENT 1 ------ */}
-            <div class="event row no-gutter center-block">
-              <div class="col-lg-7 no-gutter">
+            <div id="outerDiv" class="event row no-gutter center-block vert-center">
+              <div class="col-lg-7 no-gutter vert-center">
 
                 <div class="col-lg-4 ">
                   <div>14th February 2021</div>
@@ -30,13 +30,15 @@ function MainContent() {
                 </div>
 
               </div>
-              <div class="col-lg-5 no-gutter">
+              <div class="col-lg-5 no-gutter vert-center">
                 
-                <div class="col-lg-7 ">
+                <div class="col-lg-7 gutter">
                   <div>Leeds, United Kingdom</div>
                 </div>
-                <div class="col-lg-5">
-                  <button type="button" class="btn btn-default btn-xl">Get Tickets</button>
+                <div class="col-lg-5 gutter">
+                  {/* <div class="col-lg-12"> */}
+                    <button type="button" class="btn btn-default btn-xl">Get Tickets</button>
+                  {/* </div> */}
                 </div>
 
               </div>
