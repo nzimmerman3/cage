@@ -540,6 +540,11 @@ a, a:hover, a:active, a:visited, a:focus {
 
 }
 
+.music-total > img:hover {
+  cursor: pointer;
+
+}
+
 /* Album */
 .album-total {
   width: 100%;
