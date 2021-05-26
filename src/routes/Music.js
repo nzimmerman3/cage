@@ -10,6 +10,7 @@ import AlbumCTE from "../images/cage-the-elephant.jpg"
 
 import Album from "./Album"
 import Header from "../components/SubHeader"
+import AlbumPreview from "../components/AlbumPreview"
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -28,7 +29,7 @@ export default function Music(props) {
 
 
   const albums =
-    [ 
+    [
       // UPPERCASE -> PascalCase
       { "name": "Cage The Elephant", "loc": AlbumCTE },
       { "name": "Melophobia", "loc": AlbumM },
@@ -47,20 +48,16 @@ export default function Music(props) {
           loop
           effect="coverflow"
           coverflowEffect={{
-            //rotate: 50,
-            // stretch: 0,
-            // depth: 100,
-            // modifier: 1,
             slideShadows: false,
           }}
-          scrollbar={{draggable: true}}
+          scrollbar={{ draggable: true }}
           spaceBetween={50}
           slidesPerView={3}
 
         >
           {albums.map((al) => {
             return <SwiperSlide className="album">
-              <Album title={al["name"]} loc={al["loc"]} />
+              <AlbumPreview title={al["name"]} loc={al["loc"]} />
             </SwiperSlide>
           })}
           <div class="swiper-pagination"></div>

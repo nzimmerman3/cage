@@ -10,24 +10,33 @@ import Photos from "./routes/Photos"
 import Video from "./routes/Video"
 import Shop from "./routes/Shop"
 import Album from "./routes/Album"
+// import history from "./history"
+
 
 import 'bootstrap/dist/css/bootstrap.css'
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { Router, Switch, Route } from "react-router-dom"
+import { createBrowserHistory } from "history"
+
 
 function App() {
+  const history = createBrowserHistory({ forceRefresh: true })
+
   return (
     <div>
-      <Switch>
-        <Route exact path={"/"} component={MainContent} />
-        <Route exact path={"/news"} component={News} />
-        <Route exact path={"/music"} component={Music} />
-        <Route exact path={"/tour"} component={Tour} />
-        <Route exact path={"/photos"} component={Photos} />
-        <Route exact path={"/video"} component={Video} />
-        <Route exact path={"/shop"} component={Shop} />
-        <Route exact paht={"/album"} component={Album} />
-      </Switch>
+      <Router history={history}>
+        <Switch>
+          <Route exact path={"/"} component={MainContent} />
+          <Route exact path={"/news"} component={News} />
+          <Route exact path={"/music"} component={Music} />
+          <Route exact path={"/tour"} component={Tour} />
+          <Route exact path={"/photos"} component={Photos} />
+          <Route exact path={"/video"} component={Video} />
+          <Route exact path={"/shop"} component={Shop} />
+          <Route exact path={"/album"} component={Album} />
+        </Switch>
+      </Router>
+
       <Footer />
     </div>
   );
