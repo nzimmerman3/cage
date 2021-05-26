@@ -7,7 +7,7 @@ export default function Newsletter() {
     <footer className="footer" id="news">
       <div className="footer-content">
         <div className="footer-signature">
-          <img src={Signature} width="200" alt="logo" />
+          <img src={Signature} width="210" alt="logo" />
         </div>
         <div className="form-box">
           <form action="">

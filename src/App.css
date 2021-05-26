@@ -43,9 +43,24 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
   box-sizing: border-box;
   /* color: white !important; */
+}
+a, a:hover, a:active, a:visited, a:focus {
+  color: white !important;
+}
+
+.gif-deco {
+  /* z-index: 1;
+  position: absolute; */
+  position: absolute;
+  overflow: hidden;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 51, 51, 0.5); */
 }
 
 /* keira: ===== HEADER / NAV-BAR ====== */
@@ -63,11 +78,7 @@
   font-family: "Courier Prime", monospace;
   font-size: 18px;
   text-transform: uppercase;
-  text-decoration: underline;
-}
-.home-navbar a:hover {
-  color: #f2f2f2;
-  text-decoration: none;
+  /* text-decoration: underline; */
 }
 .home-navbar-center a {
   padding-bottom: 22px;
@@ -104,14 +115,6 @@
   font-family: "Courier Prime", monospace;
   font-size: 18px;
   text-transform: uppercase;
-  text-decoration: underline;
-}
-.sub-navbar a:visited {
-  color: #f2f2f2;
-}
-.sub-navbar a:hover {
-  color: white;
-  text-decoration: none;
 }
 .sub-navbar-center a {
   padding-bottom: 22px;
@@ -134,13 +137,19 @@
   float: right;
 }
 
-/* TODO: replace "text-decoration: underline" w/ .line */
 .line {
+  line-height: 0.8;
   /* Increase this as per requirement */
-  padding-bottom: 15px;
+  margin-bottom: 0px;
   border-bottom-style: solid;
-  border-bottom-width: 3.1px;
+  border-bottom-width: 1.32px;
   width: fit-content;
+}
+.line p {
+  line-height: 1;
+}
+.line:hover {
+  border: transparent;
 }
 
 /* keira: =========== MAIN ============ */
@@ -150,6 +159,7 @@
 
 .main {
   background-image: url("images/table.jpg");
+  /* url('images/chrome-initials.gif'), */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -170,6 +180,8 @@
   padding-right: 9rem; */
 
   position:relative;
+
+  margin-bottom: -105px;
 }
 .tour-header {
   margin-top: -200px;
@@ -191,7 +203,7 @@
   top: 0;
   left: 0; */
 
-  height: 1000px;
+  height: 1230px;
   background-color: rgba(0, 0, 0, 0.97);
   /* box-sizing: border-box; */
 
@@ -252,10 +264,8 @@
   border-color: white !important;
   align-content: right !important;
   text-align: center;
-
-
 }
-.btn:hover{
+.get-tickets:hover{
   background-color: red !important;
   border-color: red !important;
   border-radius: 0 !important;
@@ -283,6 +293,17 @@
   padding-left:0;
   padding-right: 25px !important;
 }
+.sold-out {
+  background-color: red !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  color: black !important;
+  border-color: red !important;
+  align-content: right !important;
+  text-align: center;
+
+  text-decoration: line-through !important;
+}
 .event-border {
   border-bottom-style: solid;
   border-bottom-width: 0.1px;
@@ -303,7 +324,7 @@
   /* background: #111111; */
   height: auto;
   font-family: "Open Sans";
-  padding-top: 100px;
+  padding-top: 120px;
   color: #ffffff;
 }
 
@@ -324,7 +345,7 @@
 }
 
 .footer-signature {
-  padding-bottom: 65px;
+  padding-bottom: 35px;
 }
 
 /* 1/19 */
@@ -367,7 +388,7 @@
   margin-right: 10px;
 }
 .subscribe-btn {
-  margin: 45px auto 140px;
+  margin: 45px auto 80px;
   width: 30%;
   display: block;
   outline: none;
@@ -419,14 +440,12 @@
   align-content: right;
   /* background-color: #e30404; */
   padding-top: 3px;
-  padding-right: 30px;
-}
-.footer-bottom a {
+  margin-right: 10px;
+  margin-left: 10px;
   color: white;
-  text-decoration: underline;
 }
-.footer-bottom a:hover {
-  text-decoration: none;
+.footer-bottom a, a:hover, a:active, a:visited, a:focus {
+  color: white;
 }
 
 .socials {
@@ -568,22 +587,46 @@
 /* Photos */
 .photo {
   background-color: rgb(22,22,22);
-
 }
 
+.photo-content {
+  position: relative;
+}
 .photo-display {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+  width:100%;
 }
+/* ======== GIF DECO: .photo section ========= */
+.eye-1 {
+  width: 100px;
+  margin-top: 15vh;
+  margin-left: 4.6vw;
+}
+.eye-2 {
+  width: 100px;
+  margin-top: 6vh;
+  margin-left: 80vw;
+}
+.lip-1 {
+  width:200px;
+  margin-top: 18vh;
+  margin-left: 6vw;
+}
+.chrome {
+  width: 1200px;
+  padding-top: 4vh;
+}
+/* ======== ======================= ========= */
 
 .photo > img {
   height: 300px;
   width: 500px;
-  /* object-fit: contain; */
+  object-fit: cover;
 }
 
 .photo > img:hover {

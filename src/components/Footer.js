@@ -28,14 +28,17 @@ function Footer() {
           </a>
         </ul>
         <p>
-          &copy; 2021{" "}
-          <a href="https://www.sonymusic.co.uk/">
-            SONY MUSIC ENTERTAINMENT UK LTD.
-            </a>{" "}
-            |{" "}
+          &copy; 2021
+          
           <a href="https://tools.sonymusiccreative.com/privacy/PCP_UK.pdf">
-            PRIVACY &amp; COOKIE POLICY
-            </a>
+            <p className="line">PRIVACY &amp; COOKIE POLICY</p>
+          </a>
+          <a><p>|</p></a>
+          <a href="https://www.sonymusic.co.uk/">
+            <p className="line">SONY MUSIC ENTERTAINMENT UK LTD.</p>
+          </a>
+          
+
         </p>
       </div>
     </div>
