@@ -459,8 +459,16 @@
 .music-total {
   width: 100%;
   margin: auto;
+}
 
-  margin-top: 45%;
+.music-total img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
 }
 
 .music-header {
@@ -493,6 +501,50 @@
   margin-top: 50px;
   margin-bottom: 50px;
 
+}
+
+/* Album */
+.album-total {
+  width: 100%;
+  margin: auto;
+}
+
+.album-total img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+}
+
+.album-header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+
+  z-index: 1;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "Circular Std Bold";
+  font-size: 3em;
+}
+.album-subheader {
+  margin-bottom: 20px;
+
+  color: #5d5d5d;
+  text-align: center;
+  font-family: 'Circular Std Book';
+  font-size: 1.2em;
+  font-weight: 50;
+}
+
+.album-player {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 /* Photos */

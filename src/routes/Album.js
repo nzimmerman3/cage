@@ -1,5 +1,6 @@
 import React from 'react'
 import SpotifyPlayer from 'react-spotify-player'
+import Header from "../components/SubHeader"
 
 
 export default function Album(props) {
@@ -19,20 +20,31 @@ export default function Album(props) {
     "TELL ME I'M PRETTY": "spotify:album:0nW0w37lrQ87k7PLZvC4qJ"
   }
 
+  console.log(props)
+
   return (
-    < div className="music-total">
-      <img src={props.loc} ></img>
-      <div className="music-header">
-        {props.title}
-      </div>
-      <div className="music-subheader">Cage The Elephant</div>
-      <SpotifyPlayer
-        uri={uris[(props.title).toUpperCase()]} 
-        // props.title -> UPPERCASE
-        size={size}
-        view={view}
-        theme={theme}
-      />
-    </div >
+    <div className="music">
+      <Header />
+      < div className="album-total">
+        <div className="album-header">
+          {props.location.state.state.title}
+        </div>
+        <div className="album-subheader">Cage The Elephant</div>
+        <img src={props.location.state.state.loc} ></img>
+
+        <div className="album-player">
+          <SpotifyPlayer
+            uri={uris[(props.location.state.state.title).toUpperCase()]}
+            size={size}
+            view={view}
+            theme={theme}
+          />
+        </div>
+
+      </div >
+      {/* </div> */}
+
+    </div>
+
   )
 }
