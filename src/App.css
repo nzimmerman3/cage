@@ -565,6 +565,10 @@ a, a:hover, a:active, a:visited, a:focus {
   margin-top: 18vh;
   margin-left: 6vw;
 }
+.chrome {
+  width: 1200px;
+  padding-top: 4vh;
+}
 /* ======== ======================= ========= */
 
 .photo > img {
