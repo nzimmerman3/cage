@@ -61,8 +61,6 @@ export default function Music(props) {
             </SwiperSlide>
           })}
           <div class="swiper-pagination"></div>
-
-
         </Swiper>
       </section>
     </main >
