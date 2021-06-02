@@ -32,14 +32,7 @@ export default function Album(props) {
         <div className="album-subheader">Cage The Elephant</div>
         <img src={props.loc} ></img>
 
-        <div className="album-player">
-          <SpotifyPlayer
-            uri={uris[(props.title).toUpperCase()]}
-            size={size}
-            view={view}
-            theme={theme}
-          />
-        </div>
+
       </div >
     </div>
 

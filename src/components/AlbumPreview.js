@@ -10,20 +10,18 @@ export default function AlbumPreview(props) {
     "TELL ME I'M PRETTY": "spotify:album:0nW0w37lrQ87k7PLZvC4qJ"
   }
   return (
-    <div>
-      < div className="music-total" >
-        <img src={props.loc} onClick={() => {
-          props.change(true);
-          props.setTitle(props.title)
-          props.setLoc(props.loc)
-        }
-        }></img>
-        <div className="music-header">
-          {props.title}
-        </div>
-        <div className="music-subheader">Cage The Elephant</div>
-      </div >
+    < div className="music-total" >
+      <img src={props.loc} onClick={() => {
+        props.change(!props.player);
+        props.setTitle(props.title)
+        props.setLoc(props.loc)
+      }
+      }></img>
+      <div className="music-header">
+        {props.title}
+      </div>
+      <div className="music-subheader">Cage The Elephant</div>
+    </div >
 
-    </div>
   )
 }
