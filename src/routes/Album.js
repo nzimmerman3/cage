@@ -27,23 +27,20 @@ export default function Album(props) {
       <Header />
       < div className="album-total">
         <div className="album-header">
-          {props.location.state.state.title}
+          {props.title}
         </div>
         <div className="album-subheader">Cage The Elephant</div>
-        <img src={props.location.state.state.loc} ></img>
+        <img src={props.loc} ></img>
 
         <div className="album-player">
           <SpotifyPlayer
-            uri={uris[(props.location.state.state.title).toUpperCase()]}
+            uri={uris[(props.title).toUpperCase()]}
             size={size}
             view={view}
             theme={theme}
           />
         </div>
-
       </div >
-      {/* </div> */}
-
     </div>
 
   )

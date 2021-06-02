@@ -1,5 +1,4 @@
-import React from 'react'
-import history from '../history'
+import React, { useState } from 'react'
 
 export default function AlbumPreview(props) {
   const uris = {
@@ -14,8 +13,9 @@ export default function AlbumPreview(props) {
     <div>
       < div className="music-total" >
         <img src={props.loc} onClick={() => {
-          history.push('/album', { state: props })
-          history.go()
+          props.change(true);
+          props.setTitle(props.title)
+          props.setLoc(props.loc)
         }
         }></img>
         <div className="music-header">
@@ -23,6 +23,7 @@ export default function AlbumPreview(props) {
         </div>
         <div className="music-subheader">Cage The Elephant</div>
       </div >
+
     </div>
   )
 }
