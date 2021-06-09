@@ -15,6 +15,7 @@ function MainContent() {
           <img src={Chrome} class="img-responsive center-block d-block chrome" alt=""/>
         </div>
         
+        <div className="shop-navbar"></div>
 
         <Tour />
         <Newsletter />
