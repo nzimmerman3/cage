@@ -362,17 +362,17 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 /* ===================== SHOP ======================= */
-.photo-container {
+.shop-header-container {
   width:100%;
   overflow:hidden;
   position: relative;
   text-align: center;
   color: white;
 }
-.photo {
+.shop-header-img {
   width: 100%;
 }
-.photo-signature {
+.shop-header-signature {
   width: 22vw;
   margin-bottom: -6vh;
   margin-left: -120px;

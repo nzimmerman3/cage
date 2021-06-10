@@ -17,10 +17,10 @@ export default function Shop() {
     <div>
         <Header />
 
-        <div className="photo-container">
-          <img src={Photo} className="photo" alt="" />
+        <div className="shop-header-container">
+          <img src={Photo} className="shop-header-img" alt="" />
           <div class="bottom-left">
-            {/* <img src={Signature} className="photo-signature"/> */}
+            {/* <img src={Signature} className="shop-header-signature"/> */}
             <p>SHOP</p>
           </div>
         </div>
