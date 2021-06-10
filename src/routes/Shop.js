@@ -6,6 +6,7 @@ import ShopHeader from './ShopHeader'
 import Product1 from '../images/products/yellow-shirt.png'
 import Product2 from '../images/products/pink-tote.png'
 import Product from './Product'
+import Signature from '../images/signature-white.png'
 
 
 export default function Shop() {
@@ -16,9 +17,10 @@ export default function Shop() {
     <div>
         <Header />
 
-        <div className="img-container">
-          <img src={Photo} alt="" />
+        <div className="photo-container">
+          <img src={Photo} className="photo" alt="" />
           <div class="bottom-left">
+            {/* <img src={Signature} className="photo-signature"/> */}
             <p>SHOP</p>
           </div>
         </div>

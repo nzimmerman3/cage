@@ -362,15 +362,20 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 /* ===================== SHOP ======================= */
-.img-container {
+.photo-container {
   width:100%;
   overflow:hidden;
   position: relative;
   text-align: center;
   color: white;
 }
-.img-container img {
+.photo {
   width: 100%;
+}
+.photo-signature {
+  width: 22vw;
+  margin-bottom: -6vh;
+  margin-left: -120px;
 }
 .bottom-left {
   position: absolute;
@@ -409,9 +414,9 @@ a, a:hover, a:active, a:visited, a:focus {
   border-bottom-width: 0.1px;
   color: white;
 
-  text-align: middle !important;
+  text-align: middle;
   font-family: "Circular Std Bold";
-  font-size: 22px;
+  font-size: 26px;
 }
 .vert-center {
   display: flex;
@@ -420,6 +425,16 @@ a, a:hover, a:active, a:visited, a:focus {
 .product-container {
 }
 .product-container img {
+}
+.product-name {
+  margin-top: 18px;
+}
+.product-price {
+  margin-top: -6px;
+  font-family: "Circular Std Bold";
+  font-size: 18px;
+  color: #5d5d5d;
+  font-weight: lighter;
 }
 .btn {
   background-color: white !important;
