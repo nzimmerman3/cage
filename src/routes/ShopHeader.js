@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../images/cte.png";
 import Cart from "../images/shopping-cart.png";
 import Menu from "../images/menu-bars.png";
+import Signature from "../images/signature-white.png"
 import {
   Switch,
   Route,
@@ -14,15 +15,22 @@ function ShopHeader() {
       <div className="shop-navbar-content">
         <ul className="shop-navbar-left">
           <li>
-            <a ><div><img src={Menu} height="35"/></div></a>
+            <Link ><p className="line">Tour Merch</p></Link>
+          </li>
+          <li>
+            <Link ><p className="line">Music</p></Link>
+          </li>
+          <li>
+            <Link ><p className="line">Apparel</p></Link>
+          </li>
+          <li>
+            <Link ><p className="line">Accessories</p></Link>
           </li>
         </ul>
-        <div className="shop-navbar-center" id="logo">
-            <a> <div className="shop-header"> Shop </div> </a>
-        </div>
-        <ul className="shop-navbar-right">
-          <li>
-            <a ><div><img src={Cart} height="30"/></div></a>
+        
+        <ul className="shop-navbar-right ">
+          <li className="signature-container">
+            <img src={Signature}/>
           </li>
         </ul>
       </div>

@@ -11,6 +11,9 @@ export default function Shop() {
 
         <div className="img-container">
           <img src={Photo} alt="" />
+          <div class="bottom-left">
+            <p>SHOP</p>
+          </div>
         </div>
         
         <ShopHeader/>
