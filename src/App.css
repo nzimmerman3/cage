@@ -396,7 +396,83 @@ a, a:hover, a:active, a:visited, a:focus {
   background-image: url("images/spiral-pattern.png");
   background-size: 500px;
 }
+.products {
+  background: black;
+  display: block;
+  height: 120px;
+  width: 95%;
+  
 
+  /* Increase this as per requirement */
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  color: white;
+
+  text-align: middle !important;
+  font-family: "Circular Std Bold";
+  font-size: 22px;
+}
+.vert-center {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  background-color: white !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  color: black !important;
+  border-color: white !important;
+  align-content: right !important;
+  text-align: center;
+}
+.get-tickets:hover{
+  background-color: red !important;
+  border-color: red !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  color: white !important;
+}
+.btn-xl {
+  padding: 8px 20px !important;
+/* GET TICKETS BUTTON PADDING */
+
+  text-align: center;
+  font-size: 18px !important;
+  width: 100%;
+  /* min-width:180px; */
+  /* width:90%;         TODO: make so button's width is 100% when xs-view*/ 
+}
+.btn p {
+  /* GET TICKETS BUTTON PADDING */
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 0px;
+  overflow-wrap:break-word;
+}
+.button-padding {
+  padding-left:0;
+  padding-right: 25px !important;
+}
+.sold-out {
+  background-color: red !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  color: black !important;
+  border-color: red !important;
+  align-content: right !important;
+  text-align: center;
+
+  text-decoration: line-through !important;
+}
+.event-border {
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  color: white;
+}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
 
 
 /* keira: =========== FOOTER ============ */
