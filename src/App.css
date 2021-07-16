@@ -425,6 +425,9 @@ a, a:hover, a:active, a:visited, a:focus {
 .product-container {
 }
 .product-container img {
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
 }
 .product-name {
   margin-top: 18px;
