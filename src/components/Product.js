@@ -1,6 +1,7 @@
 import React from 'react'
 import Product1 from '../images/products/yellow-shirt.png'
 import Product2 from '../images/products/pink-tote.png'
+import Product3 from '../images/products/black-bandana.png'
 
 const products = {
   1: {
@@ -11,7 +12,12 @@ const products = {
   },
   2: {
     "image": Product2,
-    "name": "Pink Tote",
+    "name": "Tote Bag",
+    "price": "$20.00"
+  },
+  3: {
+    "image": Product3,
+    "name": "Bandana",
     "price": "$20.00"
   }
 }

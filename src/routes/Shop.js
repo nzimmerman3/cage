@@ -34,10 +34,10 @@ export default function Shop() {
             <Product id="2"></Product>
           </div>
           <div class="col-lg-2">
-            <Product id="1"></Product>
+            <Product id="3"></Product>
           </div>
           <div class="col-lg-2">
-            <Product id="2"></Product>
+            <Product id="3"></Product>
           </div>
         </div>
       </div>
