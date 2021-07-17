@@ -190,9 +190,19 @@ a, a:hover, a:active, a:visited, a:focus {
   position: relative;
   text-align: center;
   color: white;
+  padding-right: 50px;
 }
 .signature-container img {
   height: 300%;
+}
+.cart-container {
+  height:70px;
+  float: right;
+  /* overflow:hidden; */
+  color: white;
+}
+.cart-container img {
+  height: 49%;
 }
 
 .line {

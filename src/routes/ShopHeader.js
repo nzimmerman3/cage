@@ -29,9 +29,14 @@ function ShopHeader() {
         </ul>
         
         <ul className="shop-navbar-right ">
+
+          <li className="cart-container mx-auto vert-center">
+            <img src={Cart}/>
+          </li>
           <li className="signature-container">
             <img src={Signature}/>
           </li>
+
         </ul>
       </div>
     </div>

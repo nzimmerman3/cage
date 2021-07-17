@@ -51,6 +51,22 @@ const products = [
     "image": Product3,
     "name": "Bandana",
     "price": "$16.00"
+  },
+  {
+    "image": Product1,
+    "name": "T-Shirt",
+    "price": "$40.00"
+    //TODO add category (tour merch, music, apparel, etc.)
+  },
+  {
+    "image": Product2,
+    "name": "Tote Bag",
+    "price": "$20.00"
+  },
+  {
+    "image": Product3,
+    "name": "Bandana",
+    "price": "$16.00"
   }
 ]
 
