@@ -37,6 +37,17 @@
   }
 }
 
+@font-face {
+  font-family: "Circular Std Light";
+  src: url("fonts/CircularStd-Light.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Circular Std Regular";
+  src: url("fonts/CircularStd-Regular.woff") format('woff');
+}
+
 /* ====================================== */
 
 * {
@@ -394,22 +405,24 @@ a, a:hover, a:active, a:visited, a:focus {
   font-size:1.8em;
   font-weight:bolder;
 }
-
 .shop-background{
-  height: 500px;
+  height: fit-content;
   background-color: rgb(22,22,22);
   background-image: url("images/spiral-pattern.png");
   background-size: 500px;
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+/* .shop-content {
+  position: relative;
+} */
 .products {
   background: black;
   display: block;
-  height: 300px;
   width: 95.5%;
+  height: fit-content;
 
-  /* Increase this as per requirement */
   border-bottom-style: solid;
   border-bottom-width: 0.1px;
   color: white;
@@ -423,22 +436,25 @@ a, a:hover, a:active, a:visited, a:focus {
   align-items: center;
 }
 .product-container {
+  margin-bottom: 16px;
 }
 .product-container img {
   object-fit: contain;
-  width: 150px;
-  height: 150px;
+  width: 230px;
+  height: 200px;
 }
-.product-name {
-  margin-top: 18px;
+.product-container h3 {
+  margin-top: 10px;
+  font-size: 28px;
 }
-.product-price {
-  margin-top: -6px;
-  font-family: "Circular Std Bold";
-  font-size: 18px;
+.product-container h4 {
+  margin-top: -8px;
+  font-family: Circular Std Regular;
+  font-size: 20px;
   color: #5d5d5d;
-  font-weight: lighter;
+  font-weight:500;
 }
+
 .btn {
   background-color: white !important;
   border-radius: 0 !important;

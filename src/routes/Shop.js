@@ -27,44 +27,10 @@ export default function Shop() {
         {/* Content */}
         <div id="outerDiv" class="products row no-gutter center-block vert-center text-center">
 
-          <div class="col-lg-2">
-            <Product id="1"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="2"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="3"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="3"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="1"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="2"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="3"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="3"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="1"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="2"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="3"></Product>
-          </div>
-          <div class="col-lg-2">
-            <Product id="3"></Product>
-          </div>
-          
+          <Product></Product>
+
         </div>
+
       </div>
     </div>
   )
