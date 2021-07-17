@@ -411,21 +411,21 @@ a, a:hover, a:active, a:visited, a:focus {
   background-image: url("images/spiral-pattern.png");
   background-size: 500px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 /* .shop-content {
   position: relative;
 } */
 .products {
-  background: black;
   display: block;
   width: 95.5%;
   height: fit-content;
 
+  /* background: black;
   border-bottom-style: solid;
   border-bottom-width: 0.1px;
-  color: white;
+  color: white; */
 
   text-align: middle;
   font-family: "Circular Std Bold";
@@ -446,6 +446,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .product-container h3 {
   margin-top: 10px;
   font-size: 28px;
+  color: white;
 }
 .product-container h4 {
   margin-top: -8px;
