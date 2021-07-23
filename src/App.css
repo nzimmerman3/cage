@@ -289,6 +289,7 @@ a, a:hover, a:active, a:visited, a:focus {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  /* justify-content: center; */
 }
 
 .event {
@@ -465,6 +466,94 @@ a, a:hover, a:active, a:visited, a:focus {
   color: #5d5d5d;
   font-weight:500;
 }
+.product-view {
+  display: block;
+  /* background-color: red; */
+  /* height: 580px; */
+  height: 560px;
+  width: 100%;
+  /* margin-bottom: 20px; */
+  font-family: Circular Std Bold;
+  color: #5d5d5d;
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+}
+#center-hv{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-view-img-container {
+  /* background-color: #61dafb; */
+  height: 100%;
+}
+.product-view-img-container img {
+  object-fit: contain;
+  width: 630px;
+  height: 450px;
+  /* background-color: blue; */
+}
+.product-view-slider {
+  width: 100%;
+  height: 60px;
+  /* background-color: red; */
+}
+.product-view-right-container {
+  /* background-color: green; */
+  height: 100%;
+}
+.product-view-info-container {
+  /* background-color: magenta; */
+  height: 100%;
+}
+.product-view-txt-container{
+  /* background-color: darkred; */
+  padding-left: 15px;
+  padding-right:150px;
+}
+.product-view-txt-container h2{
+  color: white;
+  font-size: 58px;
+  letter-spacing: -2.2px;
+
+  margin-bottom: -26px;
+}
+.product-view-txt-container h3{
+  font-family: "Circular Std Regular";
+  font-size: 38px;
+
+  margin-bottom: 60px;
+}
+.product-view-txt-container p{
+  margin-bottom: 60px;
+}
+.product-view-add-btn-container {
+  background-color: red;
+  height: 60px;
+  width: 40%;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: white;
+
+  margin-bottom: 90px;
+}
+.product-view-exit-btn-container {
+  /* background-color: greenyellow; */
+  height: 100%;
+
+  margin-left: -20px;
+}
+.exit-btn img{
+  
+  height: 34px;
+  width: 34px;
+}
+
 
 .btn {
   background-color: white !important;
