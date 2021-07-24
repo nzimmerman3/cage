@@ -448,6 +448,8 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .product-container {
   margin-bottom: 16px;
+  text-align: center;
+  /* background-color: red; */
 }
 .product-container img {
   object-fit: contain;
