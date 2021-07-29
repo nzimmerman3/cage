@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from "../components/SubHeader"
 import Tour from './Tour'
 import Photo from "../images/display-photos/neil-krug-7-cropped.jpg"
@@ -9,6 +9,7 @@ import Product1 from '../images/products/yellow-shirt.png'
 import ExitBtn from '../images/products/exit-btn.png'
 
 export default function Shop() {
+  const [filter, setFilter] = useState("all")
 
   return (
     <div>
@@ -22,10 +23,10 @@ export default function Shop() {
         </div>
       </div>
 
-      <ShopHeader />
+      <ShopHeader setFilter={setFilter} />
 
       <div className="shop-background">
-          <Product></Product>
+        <Product type={filter}></Product>
       </div>
     </div>
   )

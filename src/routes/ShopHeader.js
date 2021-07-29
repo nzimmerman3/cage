@@ -9,32 +9,35 @@ import {
   Link
 } from "react-router-dom";
 
-function ShopHeader() {
+function ShopHeader(props) {
+  function changeFilter(type) {
+    props.setFilter(type)
+  }
   return (
     <div className="shop-navbar">
       <div className="shop-navbar-content">
         <ul className="shop-navbar-left">
           <li>
-            <Link ><p className="line">Tour Merch</p></Link>
+            <div className="line shop-line" onClick={() => changeFilter("all")}>Tour Merch</div>
           </li>
           <li>
-            <Link ><p className="line">Music</p></Link>
+            <div className="line shop-line" onClick={() => changeFilter("music")}>Music</div>
           </li>
           <li>
-            <Link ><p className="line">Apparel</p></Link>
+            <div className="line shop-line" onClick={() => changeFilter("apparel")}>Apparel</div>
           </li>
           <li>
-            <Link ><p className="line">Accessories</p></Link>
+            <div className="line shop-line" onClick={() => changeFilter("accessory")}>Accessories</div>
           </li>
         </ul>
-        
+
         <ul className="shop-navbar-right ">
 
           <li className="cart-container mx-auto vert-center">
-            <img src={Cart}/>
+            <img src={Cart} />
           </li>
           <li className="signature-container">
-            <img src={Signature}/>
+            <img src={Signature} />
           </li>
 
         </ul>

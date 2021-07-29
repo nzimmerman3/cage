@@ -26,109 +26,126 @@ function Product(props) {
       "image": Product1,
       "name": "T-Shirt",
       "price": "$40.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "apparel",
       "desc": "Custom dip-dye t-shirt featuring Cage the Elephant logo on front left chest and 2019 tour dates on the back."
     },
     {
       "image": Product2,
       "name": "Tote Bag",
       "price": "$20.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "accessory",
       "desc": "Light pink tote bag featuring melted suit portrait design on one side."
     },
     {
       "image": Product3,
       "name": "Bandana",
       "price": "$16.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "accessory",
       "desc": "Black bandana featuring artwork from the Tell Me I'm Pretty album."
     },
     {
       "image": Product4,
       "name": "Social Cues",
       "price": "$40.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "music",
       "desc": "[TrackList]"
     },
     {
       "image": Product1,
       "name": "T-Shirt",
       "price": "$40.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "apparel",
       "desc": "Custom dip-dye t-shirt featuring Cage the Elephant logo on front left chest and 2019 tour dates on the back."
     },
     {
       "image": Product2,
       "name": "Tote Bag",
       "price": "$20.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "accessory",
       "desc": "Light pink tote bag featuring melted suit portrait design on one side."
     },
     {
       "image": Product3,
       "name": "Bandana",
       "price": "$16.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "accessory",
       "desc": "Black bandana featuring artwork from the Tell Me I'm Pretty album."
     },
     {
       "image": Product4,
       "name": "Social Cues",
       "price": "$40.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "music",
       "desc": "[TrackList]"
     },
     {
       "image": Product1,
       "name": "T-Shirt",
       "price": "$40.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "apparel",
       "desc": "Custom dip-dye t-shirt featuring Cage the Elephant logo on front left chest and 2019 tour dates on the back."
     },
     {
       "image": Product2,
       "name": "Tote Bag",
       "price": "$20.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "accessory",
       "desc": "Light pink tote bag featuring melted suit portrait design on one side."
     },
     {
       "image": Product3,
       "name": "Bandana",
       "price": "$16.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "accessory",
       "desc": "Black bandana featuring artwork from the Tell Me I'm Pretty album."
     },
     {
       "image": Product4,
       "name": "Social Cues",
       "price": "$40.00",
-      //TODO add category (tour merch, music, apparel, etc.)
-      //TODO add description
+      "category": "music",
       "desc": "[TrackList]"
-    }
+    },
+    {
+      "image": Product1,
+      "name": "T-Shirt",
+      "price": "$40.00",
+      "category": "apparel",
+      "desc": "Custom dip-dye t-shirt featuring Cage the Elephant logo on front left chest and 2019 tour dates on the back."
+    },
+    {
+      "image": Product2,
+      "name": "Tote Bag",
+      "price": "$20.00",
+      "category": "accessory",
+      "desc": "Light pink tote bag featuring melted suit portrait design on one side."
+    },
+    {
+      "image": Product3,
+      "name": "Bandana",
+      "price": "$16.00",
+      "category": "accessory",
+      "desc": "Black bandana featuring artwork from the Tell Me I'm Pretty album."
+    },
+    {
+      "image": Product4,
+      "name": "Social Cues",
+      "price": "$40.00",
+      "category": "music",
+      "desc": "[TrackList]"
+    },
   ])
 
   const renderViewProducts = () => (
     <div id="outerDiv" class="products row no-gutter center-block vert-center">
       {products.map((product, id) => (
-        <div onClick={ () => changeView(VIEWPRODUCT) }
-        className="col-lg-2 product-container" key={id}>
-          <img id="image" src={product.image}/>
-          <h3 id="name">{product.name}</h3>
-          <h4>{product.price}</h4>
-        </div>
+        product.category === props.type || props.type === "all" ?
+          <div onClick={() => changeView(VIEWPRODUCT)}
+            className="col-lg-2 product-container" key={id}>
+            <img id="image" src={product.image} />
+            <h3 id="name">{product.name}</h3>
+            <h4>{product.price}</h4>
+          </div> : <div></div>
       ))}
     </div>
   );
@@ -137,7 +154,7 @@ function Product(props) {
     <div className="product-view row no-gutter center-block vert-center">
       <div id="center-hv" className="product-view-img-container col-lg-6">
         <div className="">
-          <img src={Product1}/>
+          <img src={Product1} />
           <div id="center-hv" className="product-view-slider">...</div>
         </div>
       </div>
@@ -154,7 +171,7 @@ function Product(props) {
         </div>
         <div className="col-lg-1 product-view-exit-btn-container">
           <div className="exit-btn">
-            <img onClick={ () => changeView(VIEWPRODUCTS) } src={ExitBtn}/>
+            <img onClick={() => changeView(VIEWPRODUCTS)} src={ExitBtn} />
           </div>
         </div>
       </div>
@@ -170,10 +187,10 @@ function Product(props) {
 
       {view === VIEWPRODUCTS && renderViewProducts()}
       {view === VIEWPRODUCT && renderViewProduct()}
-      
+
     </div>
 
-    
+
   )
 }
 

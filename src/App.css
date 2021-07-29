@@ -173,6 +173,8 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .shop-navbar-left {
   margin-left: 26px;
+  display: flex;
+  padding: 5px;
 }
 .shop-navbar-left a {
   float: left;
@@ -182,6 +184,16 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .shop-navbar-right img {
   float: right;
+}
+/* TODO STYLE, This is temporary */
+.shop-line {
+  color: white;
+  font-size: large;
+  margin: 5px;
+}
+
+.shop-line:hover {
+  cursor: pointer;
 }
 .signature-container {
   height:70px;
@@ -219,6 +231,8 @@ a, a:hover, a:active, a:visited, a:focus {
 .line:hover {
   border: transparent;
 }
+
+
 
 /* keira: =========== MAIN ============ */
 
