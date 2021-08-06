@@ -5,19 +5,27 @@ import Product3 from '../images/products/black-bandana.png'
 import Product4 from '../images/products/social-cues-vinyl.png'
 import ExitBtn from '../images/products/exit-btn.png'
 
-var productToDisplay = {
-  "image": Product1,
-  "name": "Default",
-  "price": "$0.00",
-  //TODO add category (tour merch, music, apparel, etc.)
-  //TODO add description
-  "desc": "Description"
-}
+// var productToDisplay = {
+//   "image": Product1,
+//   "name": "Default",
+//   "price": "$0.00",
+//   //TODO add category (tour merch, music, apparel, etc.)
+//   //TODO add description
+//   "desc": "Description"
+// }
 
 const VIEWPRODUCTS = 'products';
 const VIEWPRODUCT = 'product';
 
 function Product(props) {
+
+  const [dispProduct, setDispProduct] = useState({
+    "image": Product1,
+    "name": "T-Shirt",
+    "price": "$40.00",
+    "category": "apparel",
+    "desc": "Custom dip-dye t-shirt featuring Cage the Elephant logo on front left chest and 2019 tour dates on the back."
+  })
 
   const [view, setView] = useState(VIEWPRODUCTS);
 
@@ -140,7 +148,11 @@ function Product(props) {
     <div id="outerDiv" class="products row no-gutter center-block vert-center">
       {products.map((product, id) => (
         product.category === props.type || props.type === "all" ?
-          <div onClick={() => changeView(VIEWPRODUCT)}
+          <div onClick={() => {
+            changeView(VIEWPRODUCT)
+            setDispProduct(product)
+          }
+          }
             className="col-lg-2 product-container" key={id}>
             <img id="image" src={product.image} />
             <h3 id="name">{product.name}</h3>
@@ -154,16 +166,16 @@ function Product(props) {
     <div className="product-view row no-gutter center-block vert-center">
       <div id="center-hv" className="product-view-img-container col-lg-6">
         <div className="">
-          <img src={Product1} />
+          <img src={dispProduct.image} />
           <div id="center-hv" className="product-view-slider">...</div>
         </div>
       </div>
       <div className="product-view-right-container col-lg-6 ">
         <div id="outerDiv" className="col-lg-11 product-view-info-container">
           <div className="product-view-txt-container">
-            <h2 class="row">T-Shirt</h2>
-            <h3 class="row">$40.00</h3>
-            <p class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <h2 class="row">{dispProduct.name}</h2>
+            <h3 class="row">{dispProduct.price}</h3>
+            <p class="row">{dispProduct.desc}</p>
             <div id="center-hv" className="row product-view-add-btn-container">
               <div>Add to Cart</div>
             </div>

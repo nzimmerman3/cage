@@ -456,6 +456,7 @@ a, a:hover, a:active, a:visited, a:focus {
   font-family: "Circular Std Bold";
   font-size: 26px;
 }
+
 .vert-center {
   display: flex;
   align-items: center;
@@ -464,6 +465,9 @@ a, a:hover, a:active, a:visited, a:focus {
   margin-bottom: 16px;
   text-align: center;
   /* background-color: red; */
+}
+.product-container:hover img{
+  cursor: pointer;
 }
 .product-container img {
   object-fit: contain;
@@ -558,6 +562,11 @@ a, a:hover, a:active, a:visited, a:focus {
 
   margin-bottom: 90px;
 }
+
+.product-view-add-btn-container:hover {
+  cursor: pointer;
+}
+
 .product-view-exit-btn-container {
   /* background-color: greenyellow; */
   height: 100%;
@@ -568,6 +577,10 @@ a, a:hover, a:active, a:visited, a:focus {
   
   height: 34px;
   width: 34px;
+}
+
+.exit-btn:hover img {
+  cursor: pointer;
 }
 
 
