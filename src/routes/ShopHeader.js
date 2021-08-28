@@ -14,33 +14,45 @@ function ShopHeader(props) {
     props.setFilter(type)
   }
   return (
+
     <div className="shop-navbar">
-      <div className="shop-navbar-content">
+      <div className="shop-navbar-container">
         <ul className="shop-navbar-left">
+          <a>
+            <li>
+              <p className="line" onClick={() => changeFilter("all")}>Tour Merch</p>
+            </li>
+          </a>
+          <a>
+            <li>
+              <p className="line" onClick={() => changeFilter("music")}>Music</p>
+            </li>
+          </a>
+          <a>
+            <li>
+              <p className="line" onClick={() => changeFilter("apparel")}>Apparel</p>
+            </li>
+          </a>
+          <a>
           <li>
-            <div className="line shop-line" onClick={() => changeFilter("all")}>Tour Merch</div>
+            <p className="line" onClick={() => changeFilter("accessory")}>Accessories</p>
           </li>
-          <li>
-            <div className="line shop-line" onClick={() => changeFilter("music")}>Music</div>
-          </li>
-          <li>
-            <div className="line shop-line" onClick={() => changeFilter("apparel")}>Apparel</div>
-          </li>
-          <li>
-            <div className="line shop-line" onClick={() => changeFilter("accessory")}>Accessories</div>
-          </li>
+          </a>
         </ul>
+        <p>
+          
+          <a>
+            <li className="cart-container mx-auto vert-center">
+              <img src={Cart} />
+            </li>
+          </a>
+          <a>
+            <li className="signature-container">
+              <img src={Signature} />
+            </li>
+          </a>
 
-        <ul className="shop-navbar-right ">
-
-          <li className="cart-container mx-auto vert-center">
-            <img src={Cart} />
-          </li>
-          <li className="signature-container">
-            <img src={Signature} />
-          </li>
-
-        </ul>
+        </p>
       </div>
     </div>
   );
