@@ -8,9 +8,9 @@ import reportWebVitals from './reportWebVitals';
 /* import Info from "./components/Info" */
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import cartReducer from './reducers/cart'
+import allReducers from './reducers/cart'
 
-const store = createStore(cartReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
   <Provider store={store}>

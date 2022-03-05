@@ -1,4 +1,4 @@
-// import { combineReducers } from "redux"
+import { combineReducers } from "redux"
 const cartReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD':
@@ -11,5 +11,8 @@ const cartReducer = (state = [], action) => {
 
 }
 
+const allReducers = combineReducers({
+  cart: cartReducer
+})
 
-export default cartReducer
+export default allReducers

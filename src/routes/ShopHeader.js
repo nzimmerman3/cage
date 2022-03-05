@@ -1,18 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../images/cte.png";
 import Cart from "../images/shopping-cart.png";
 import Menu from "../images/menu-bars.png";
 import Signature from "../images/signature-white.png"
-import {
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 function ShopHeader(props) {
   function changeFilter(type) {
     props.setFilter(type)
   }
+
+  // const [dispCart, setDispCart] = useState(false)
   return (
 
     <div className="shop-navbar">
@@ -34,19 +31,19 @@ function ShopHeader(props) {
             </li>
           </a>
           <a>
-          <li>
-            <p className="line" onClick={() => changeFilter("accessory")}>Accessories</p>
-          </li>
+            <li>
+              <p className="line" onClick={() => changeFilter("accessory")}>Accessories</p>
+            </li>
           </a>
         </ul>
         <p>
-          
           <a>
             <li className="cart-container mx-auto vert-center">
-              <img src={Cart} />
+              <img src={Cart} onClick={() => props.setShowCart(!(props.showCart))} />
             </li>
           </a>
-          <a>
+
+          < a >
             <li className="signature-container">
               <img src={Signature} />
             </li>
@@ -54,7 +51,7 @@ function ShopHeader(props) {
 
         </p>
       </div>
-    </div>
+    </div >
   );
 }
 

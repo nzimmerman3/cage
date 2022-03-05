@@ -7,6 +7,7 @@ import ExitBtn from '../images/products/exit-btn.png'
 import cartReducer from "../reducers/cart"
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../actions'
+import CartContents from "../components/CartContents.js"
 
 // var productToDisplay = {
 //   "image": Product1,
@@ -162,7 +163,7 @@ function Product(props) {
             <img id="image" src={product.image} />
             <h3 id="name">{product.name}</h3>
             <h4>{product.price}</h4>
-          </div> : <div></div>
+          </div> : ""
       ))}
     </div>
   );
@@ -205,6 +206,9 @@ function Product(props) {
 
   return (
     <div>
+      {props.showCart ?
+        <CartContents />
+        : ""}
 
       {view === VIEWPRODUCTS && renderViewProducts()}
       {view === VIEWPRODUCT && renderViewProduct()}
