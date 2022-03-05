@@ -6,13 +6,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 /* import Info from "./components/Info" */
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import cartReducer from './reducers/cart'
+
+const store = createStore(cartReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router forceRefresh={true}>
-      <App />
-    </Router>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Router forceRefresh={true}>
+        <App />
+      </Router>
+    </React.StrictMode>
+  </Provider>
+  ,
   document.getElementById('root')
 );
 

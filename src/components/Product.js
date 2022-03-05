@@ -4,6 +4,9 @@ import Product2 from '../images/products/pink-tote.png'
 import Product3 from '../images/products/black-bandana.png'
 import Product4 from '../images/products/social-cues-vinyl.png'
 import ExitBtn from '../images/products/exit-btn.png'
+import cartReducer from "../reducers/cart"
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../actions'
 
 // var productToDisplay = {
 //   "image": Product1,
@@ -144,6 +147,8 @@ function Product(props) {
     },
   ])
 
+  const dispatch = useDispatch()
+
   const renderViewProducts = () => (
     <div id="outerDiv" class="products row no-gutter center-block vert-center">
       {products.map((product, id) => (
@@ -177,7 +182,7 @@ function Product(props) {
             <h3 class="row">{dispProduct.price}</h3>
             <p class="row">{dispProduct.desc}</p>
             <div id="center-hv" className="row product-view-add-btn-container">
-              <div>Add to Cart</div>
+              <div onClick={add}>Add to Cart</div>
             </div>
           </div>
         </div>
@@ -189,6 +194,10 @@ function Product(props) {
       </div>
     </div>
   )
+
+  const add = () => {
+    dispatch(addToCart(dispProduct))
+  }
 
   const changeView = (newView) => {
     setView(newView);
